@@ -1,0 +1,264 @@
+@import "tailwindcss";
+
+/* ==========================================================================
+   TONG INC — dizayn tizimi
+
+   Ikki rejim: yorug' va qorong'i.
+
+   Qanday ishlaydi:
+   1. Quyida ikkita to'liq palitra turadi — `--l-*` (light) va `--d-*` (dark).
+   2. `--t-*` — HOZIR ISHLATILAYOTGAN rang. U yo light, yo dark ga ishora qiladi.
+   3. `@theme inline` Tailwind'ga shu `--t-*` larni beradi, shuning uchun
+      rejim almashganda sahifa qayta yuklanmasdan rangini o'zgartiradi.
+
+   Shuning uchun komponentlarda `bg-night-950` kabi aniq rang emas,
+   `bg-bg`, `text-fg-muted` kabi MA'NOVIY nomlar ishlatiladi.
+   ========================================================================== */
+
+@theme inline {
+  --color-bg: var(--t-bg);
+  --color-surface: var(--t-surface);
+  --color-surface-2: var(--t-surface-2);
+  --color-border: var(--t-border);
+  --color-border-strong: var(--t-border-strong);
+
+  --color-fg: var(--t-fg);
+  --color-fg-body: var(--t-fg-body);
+  --color-fg-muted: var(--t-fg-muted);
+  --color-fg-subtle: var(--t-fg-subtle);
+
+  --color-accent: var(--t-accent);
+  --color-accent-soft: var(--t-accent-soft);
+  --color-on-accent: var(--t-on-accent);
+  --color-ok: var(--t-ok);
+
+  --font-display: "Space Grotesk", "Inter", system-ui, sans-serif;
+  --font-sans: "Inter", system-ui, -apple-system, sans-serif;
+
+  --radius-xl2: 1.25rem;
+
+  --animate-drift: drift 22s ease-in-out infinite alternate;
+  --animate-rise: rise 0.7s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+:root {
+  /* ---------- YORUG' palitra ---------- */
+  --l-bg: #fbfaf7;
+  --l-surface: #ffffff;
+  --l-surface-2: #f3f0e9;
+  --l-border: #e6e1d6;
+  --l-border-strong: #d3ccbc;
+  --l-fg: #16131f;
+  --l-fg-body: #332e3f;
+  --l-fg-muted: #5b5468;
+  --l-fg-subtle: #756e82;
+  /* Yorug' fonda to'q sariq o'qilmaydi — to'qroq variantini olamiz */
+  --l-accent: #c2410c;
+  --l-accent-soft: #b45309;
+  --l-on-accent: #1a1206;
+  --l-ok: #047857;
+  --l-grad-1: #d97706;
+  --l-grad-2: #ea580c;
+  --l-grad-3: #dc2626;
+  --l-grad-4: #7c3aed;
+  --l-glow: 0.16;
+
+  /* ---------- QORONG'I palitra ---------- */
+  --d-bg: #060912;
+  --d-surface: #101733;
+  --d-surface-2: #141c3b;
+  --d-border: #26315c;
+  --d-border-strong: #2b3868;
+  --d-fg: #f4f6fd;
+  --d-fg-body: #d7ddf2;
+  --d-fg-muted: #9aa5c8;
+  --d-fg-subtle: #8892b4;
+  --d-accent: #ff8a45;
+  --d-accent-soft: #ffb347;
+  --d-on-accent: #0a0d1a;
+  --d-ok: #34d399;
+  --d-grad-1: #ffb347;
+  --d-grad-2: #ff7a2f;
+  --d-grad-3: #ff3d77;
+  --d-grad-4: #a855f7;
+  --d-glow: 0.26;
+
+  /* ---------- Hozirgi rejim: standart YORUG' ---------- */
+  --t-bg: var(--l-bg);
+  --t-surface: var(--l-surface);
+  --t-surface-2: var(--l-surface-2);
+  --t-border: var(--l-border);
+  --t-border-strong: var(--l-border-strong);
+  --t-fg: var(--l-fg);
+  --t-fg-body: var(--l-fg-body);
+  --t-fg-muted: var(--l-fg-muted);
+  --t-fg-subtle: var(--l-fg-subtle);
+  --t-accent: var(--l-accent);
+  --t-accent-soft: var(--l-accent-soft);
+  --t-on-accent: var(--l-on-accent);
+  --t-ok: var(--l-ok);
+  --t-grad-1: var(--l-grad-1);
+  --t-grad-2: var(--l-grad-2);
+  --t-grad-3: var(--l-grad-3);
+  --t-grad-4: var(--l-grad-4);
+  --t-glow: var(--l-glow);
+
+  color-scheme: light;
+}
+
+/* Telefon sozlamasi qorong'i bo'lsa — foydalanuvchi ataylab yorug'ni
+   tanlamagan bo'lsa, qorong'iga o'tamiz. */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --t-bg: var(--d-bg);
+    --t-surface: var(--d-surface);
+    --t-surface-2: var(--d-surface-2);
+    --t-border: var(--d-border);
+    --t-border-strong: var(--d-border-strong);
+    --t-fg: var(--d-fg);
+    --t-fg-body: var(--d-fg-body);
+    --t-fg-muted: var(--d-fg-muted);
+    --t-fg-subtle: var(--d-fg-subtle);
+    --t-accent: var(--d-accent);
+    --t-accent-soft: var(--d-accent-soft);
+    --t-on-accent: var(--d-on-accent);
+  --t-ok: var(--d-ok);
+    --t-ok: var(--d-ok);
+    --t-grad-1: var(--d-grad-1);
+    --t-grad-2: var(--d-grad-2);
+    --t-grad-3: var(--d-grad-3);
+    --t-grad-4: var(--d-grad-4);
+    --t-glow: var(--d-glow);
+
+    color-scheme: dark;
+  }
+}
+
+/* Foydalanuvchi tugma bilan qorong'ini tanlagan — telefon sozlamasidan
+   qat'i nazar shu ustun turadi. */
+:root[data-theme="dark"] {
+  --t-bg: var(--d-bg);
+  --t-surface: var(--d-surface);
+  --t-surface-2: var(--d-surface-2);
+  --t-border: var(--d-border);
+  --t-border-strong: var(--d-border-strong);
+  --t-fg: var(--d-fg);
+  --t-fg-body: var(--d-fg-body);
+  --t-fg-muted: var(--d-fg-muted);
+  --t-fg-subtle: var(--d-fg-subtle);
+  --t-accent: var(--d-accent);
+  --t-accent-soft: var(--d-accent-soft);
+  --t-on-accent: var(--d-on-accent);
+  --t-ok: var(--d-ok);
+  --t-grad-1: var(--d-grad-1);
+  --t-grad-2: var(--d-grad-2);
+  --t-grad-3: var(--d-grad-3);
+  --t-grad-4: var(--d-grad-4);
+  --t-glow: var(--d-glow);
+
+  color-scheme: dark;
+}
+
+@keyframes drift {
+  from { transform: translate3d(-4%, 0, 0) scale(1); }
+  to   { transform: translate3d(4%, -3%, 0) scale(1.12); }
+}
+
+@keyframes rise {
+  from { opacity: 0; transform: translate3d(0, 18px, 0); }
+  to   { opacity: 1; transform: none; }
+}
+
+/* --------------------------------------------------------------------------
+   Asos
+   -------------------------------------------------------------------------- */
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background-color: var(--t-bg);
+  color: var(--t-fg-body);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+  color: var(--t-fg);
+  letter-spacing: -0.02em;
+  text-wrap: balance;
+}
+
+p { text-wrap: pretty; }
+
+::selection {
+  background: var(--t-grad-3);
+  color: #fff;
+}
+
+:focus-visible {
+  outline: 2px solid var(--t-accent);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/* --------------------------------------------------------------------------
+   Yordamchi klasslar
+   -------------------------------------------------------------------------- */
+
+@utility text-dawn {
+  background-image: linear-gradient(
+    100deg,
+    var(--t-grad-1) 0%,
+    var(--t-grad-2) 32%,
+    var(--t-grad-3) 66%,
+    var(--t-grad-4) 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+/* Tugmalar foni. Bu gradient ikkala rejimda ham issiq bo'lib qoladi —
+   ustidagi matn esa doim to'q (--t-on-accent), shuning uchun o'qiladi. */
+@utility bg-dawn {
+  background-image: linear-gradient(
+    100deg,
+    var(--d-grad-1) 0%,
+    var(--d-grad-2) 32%,
+    var(--d-grad-3) 66%,
+    var(--d-grad-4) 100%
+  );
+}
+
+/* Tugma ostidagi issiq nur. Yorug' rejimda kuchsizroq — oq fonda
+   qattiq soya g'alati ko'rinadi. */
+@utility shadow-dawn {
+  box-shadow:
+    0 10px 26px -12px color-mix(in oklab, var(--d-grad-3) 60%, transparent),
+    0 2px 6px -2px rgb(0 0 0 / 0.12);
+}
+
+@utility card-edge {
+  border: 1px solid var(--t-border);
+  background: color-mix(in oklab, var(--t-surface) 82%, transparent);
+}
+
+/* --------------------------------------------------------------------------
+   Harakatni kamaytirish so'ralganda
+   -------------------------------------------------------------------------- */
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
