@@ -106,6 +106,8 @@ export default defineNuxtConfig({
         { name: 'theme-color', content: '#fbfaf7', media: '(prefers-color-scheme: light)' },
         { name: 'theme-color', content: '#060912', media: '(prefers-color-scheme: dark)' },
         { name: 'format-detection', content: 'telephone=no' },
+        // Google Search Console — sayt egaligini tasdiqlash
+        { name: 'google-site-verification', content: 'c51qlw4d85UoT3hc_2Z5Hh8dpoXHGnMQSENIK52qJOQ' },
       ],
     },
   },
