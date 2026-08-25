@@ -68,7 +68,7 @@ export const en: SiteContent = {
     about: {
       title: 'About TONG INC — Independent Studio in Uzbekistan',
       description:
-        'TONG INC is a small independent studio founded by Sardor Ikhtiyorov in Tashkent, building games, apps and web products that work offline and collect nothing about you.',
+        'TONG INC is a small independent studio founded by Sardor Ikhtiyorov in Tashkent, building games, apps and web products that work offline and never ask you to sign up.',
     },
     contact: {
       title: 'Contact TONG INC — Tashkent, Uzbekistan',
@@ -78,7 +78,7 @@ export const en: SiteContent = {
     privacy: {
       title: 'Privacy Policy | TONG INC',
       description:
-        'How TONG INC handles data across its website, games and software: no accounts, no analytics, no personal data collection. Read the full policy.',
+        'How TONG INC handles data across its website, games and software: no accounts, no sign-ups, and a plain account of exactly what Google sees when you watch an ad or buy something.',
     },
     terms: {
       title: 'Terms of Use | TONG INC',
@@ -106,7 +106,7 @@ export const en: SiteContent = {
       { value: '5', label: 'Products built or building' },
       { value: '2,363', label: 'Uzbek words written by hand' },
       { value: '25 km²', label: 'Of Tashkent rebuilt in 3D' },
-      { value: '0', label: 'Trackers in our apps' },
+      { value: '0', label: 'Accounts you have to create' },
     ],
     craft: {
       heading: 'How we build',
@@ -123,7 +123,7 @@ export const en: SiteContent = {
           icon: 'shield',
           title: 'Nothing to sign up for',
           body:
-            'No accounts, no email, no analytics SDK counting your taps. We genuinely do not know who uses our products, and we prefer it that way.',
+            'No accounts, no sign-ups, no email address to hand over. Your progress stays on your device. The only thing that ever leaves it is what Google needs to show an ad you asked for, or to process a purchase you made.',
         },
         {
           icon: 'language',
@@ -311,7 +311,7 @@ export const en: SiteContent = {
     detailsHeading: 'Details',
     privacyHeading: 'Privacy in Soʻzbogʻ',
     privacyBody:
-      'Soʻzbogʻ asks for nothing. No name, no email, no phone number, no location, no contacts, no photos. There is no account to create and no analytics system counting what you do. Your progress lives on your phone and is deleted with the app. The only outside connection happens if you choose to press the optional “watch an ad” button in the shop.',
+      'Soʻzbogʻ asks you for nothing: no name, no email, no phone number, no location, no contacts, no photos. There is no account to create and we add no analytics of our own. Your progress lives on your phone and is deleted with the app. Two things do reach Google: press the optional “watch an ad” button and Google AdMob receives your device advertising ID so it can pick an ad; buy coins and Google Play handles the payment end to end. We never see your card details, and you can reset that advertising ID at any time in Android settings.',
   },
 
   tashkentCity: {
@@ -462,7 +462,7 @@ export const en: SiteContent = {
         icon: 'shield',
         title: 'We do not want your data',
         body:
-          'Not as a compliance position — as a design choice. Our products have no accounts and no analytics because we do not need to know anything about you to make a good one.',
+          'Not as a compliance position — as a design choice. We build no profile of you, add no analytics of our own and require no account, because we do not need to know anything about you to make something good.',
       },
       {
         icon: 'offline',
@@ -537,8 +537,8 @@ export const en: SiteContent = {
       {
         heading: 'The short version',
         paragraphs: [
-          'We do not ask for your personal information and we do not collect it. There is no account to create, no analytics system in our apps, and no profile of you anywhere on our side.',
-          'The single exception is advertising in one of our games, and it only happens if you deliberately press a button asking to watch an ad. Everything below explains the detail.',
+          'We do not ask for your personal information and we do not collect it. There is no account to create, we add no analytics of our own, and there is no profile of you anywhere on our side.',
+          'Two things do involve Google, and both are your choice: the optional rewarded ads in Soʻzbogʻ, which run only when you press the button asking for one, and in-app purchases, which Google Play handles from start to finish. Everything below explains exactly what each one sees.',
         ],
       },
       {
@@ -555,13 +555,13 @@ export const en: SiteContent = {
           'Your location',
           'Your contacts, photos, files or microphone',
           'Any account or login credentials — there is no account system at all',
-          'Analytics or behavioural data — we do not use an analytics SDK',
+          'Analytics about how you play — we add no analytics SDK of our own (Google’s ad service is covered separately below)',
         ],
       },
       {
         heading: 'What is stored on your device',
         paragraphs: [
-          'Our games save what they need to work, and they save it only on your own device:',
+          'Our games save what they need to work, and they save it on your own device:',
         ],
         bullets: [
           'Which level you are on and which levels you have unlocked',
@@ -614,6 +614,7 @@ export const en: SiteContent = {
         paragraphs: [
           'Two Google services are involved in our Android apps: Google AdMob, for the optional rewarded ads described above, and Google Play Billing, for optional purchases. Both are governed by Google’s own privacy terms.',
           'Our browser game loads the three.js graphics library from a public code network (cdnjs). That request reveals your IP address to that network, as any web request does; no other information is sent and we receive nothing from it.',
+          'TASHKENT CITY can also be opened inside Telegram. When it is, the game keeps a copy of your progress in Telegram’s own cloud storage for your account, so it survives a change of device. It does not read your Telegram profile, and none of it reaches us. Opened in an ordinary browser, no such copy is made.',
         ],
       },
       {
@@ -782,7 +783,7 @@ export const en: SiteContent = {
       },
       {
         q: 'Where is my progress saved, and what happens if I change devices?',
-        a: 'Progress is saved on your own device only — nothing is sent to a server. That is deliberate, and it is why we do not ask you for an account. It also means that if you uninstall the app, clear your browser data, or move to a new device, progress does not travel with you.',
+        a: 'In Soʻzbogʻ progress is saved on your device only — nothing goes to a server, which is exactly why we never ask for an account. TASHKENT CITY behaves the same way in an ordinary browser. The one exception: open TASHKENT CITY inside Telegram and it also keeps a copy in your Telegram cloud storage, so that progress does survive a change of device. Otherwise, uninstalling the app, clearing browser data or switching devices means starting fresh.',
       },
       {
         q: 'How do I delete my data?',

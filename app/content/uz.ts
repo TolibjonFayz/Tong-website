@@ -68,7 +68,7 @@ export const uz: SiteContent = {
     about: {
       title: 'TONG INC haqida — Oʻzbekistondagi mustaqil studiya',
       description:
-        'TONG INC — Sardor Ikhtiyorov Toshkentda tashkil qilgan kichik mustaqil studiya. Internetsiz ishlaydigan va hech qanday maʼlumot yigʻmaydigan oʻyin, dastur va veb-mahsulotlar yaratamiz.',
+        'TONG INC — Sardor Ikhtiyorov Toshkentda tashkil qilgan kichik mustaqil studiya. Internetsiz ishlaydigan va sizdan roʻyxatdan oʻtishni soʻramaydigan oʻyin, dastur va veb-mahsulotlar yaratamiz.',
     },
     contact: {
       title: 'TONG INC bilan aloqa — Toshkent, Oʻzbekiston',
@@ -78,7 +78,7 @@ export const uz: SiteContent = {
     privacy: {
       title: 'Maxfiylik siyosati | TONG INC',
       description:
-        'TONG INC sayti, oʻyinlari va dasturlari maʼlumotni qanday boshqaradi: hisob yoʻq, tahlil tizimi yoʻq, shaxsiy maʼlumot yigʻilmaydi. Toʻliq siyosatni oʻqing.',
+        'TONG INC sayti, oʻyinlari va dasturlari maʼlumotni qanday boshqaradi: hisob yoʻq, roʻyxatdan oʻtish yoʻq, va reklama koʻrganingizda yoki xarid qilganingizda Google nimani koʻrishi ochiq yozilgan.',
     },
     terms: {
       title: 'Foydalanish shartlari | TONG INC',
@@ -106,7 +106,7 @@ export const uz: SiteContent = {
       { value: '5', label: 'Yasalgan va yasalayotgan mahsulot' },
       { value: '2 363', label: 'Qoʻlda yozilgan oʻzbekcha soʻz' },
       { value: '25 km²', label: '3D da qayta qurilgan Toshkent' },
-      { value: '0', label: 'Ilovalarimizdagi kuzatuvchi' },
+      { value: '0', label: 'Yaratishingiz kerak boʻlgan hisob' },
     ],
     craft: {
       heading: 'Qanday ishlaymiz',
@@ -123,7 +123,7 @@ export const uz: SiteContent = {
           icon: 'shield',
           title: 'Roʻyxatdan oʻtish degan narsa yoʻq',
           body:
-            'Hisob yoʻq, email soʻralmaydi, bosishlaringizni sanaydigan tahlil tizimi yoʻq. Kim ishlatayotganini rostdan ham bilmaymiz — va shundayligi maʼqul.',
+            'Hisob yoʻq, roʻyxatdan oʻtish yoʻq, email soʻralmaydi. Progressingiz qurilmangizda qoladi. Undan chiqadigan yagona narsa — Google oʻzingiz soʻragan reklamani koʻrsatishi yoki oʻzingiz qilgan xaridni rasmiylashtirishi uchun kerak boʻlgani.',
         },
         {
           icon: 'language',
@@ -311,7 +311,7 @@ export const uz: SiteContent = {
     detailsHeading: 'Maʼlumotlar',
     privacyHeading: 'Soʻzbogʻda maxfiylik',
     privacyBody:
-      'Soʻzbogʻ sizdan hech narsa soʻramaydi. Ism yoʻq, email yoʻq, telefon raqami yoʻq, joylashuv yoʻq, kontakt yoʻq, rasm yoʻq. Yaratadigan hisob ham, nima qilayotganingizni sanaydigan tahlil tizimi ham yoʻq. Progressingiz telefoningizda yashaydi va ilova bilan birga oʻchadi. Yagona tashqi bogʻlanish — doʻkondagi ixtiyoriy “reklama koʻrish” tugmasini oʻzingiz bosganingizda.',
+      'Soʻzbogʻ sizdan hech narsa soʻramaydi: ism, email, telefon raqami, joylashuv, kontakt, rasm — hech biri. Yaratadigan hisob yoʻq va biz oʻzimizdan hech qanday tahlil tizimi qoʻshmaymiz. Progressingiz telefoningizda yashaydi va ilova bilan birga oʻchadi. Google bilan ikkita narsa bogʻlanadi: ixtiyoriy “reklama koʻrish” tugmasini bossangiz, Google AdMob mos reklama tanlash uchun qurilmangizning reklama identifikatorini oladi; tanga sotib olsangiz, toʻlovni boshidan oxirigacha Google Play boshqaradi. Karta maʼlumotingizni biz hech qachon koʻrmaymiz, reklama identifikatorini esa Android sozlamalaridan istalgan vaqtda tozalash mumkin.',
   },
 
   tashkentCity: {
@@ -462,7 +462,7 @@ export const uz: SiteContent = {
         icon: 'shield',
         title: 'Maʼlumotingiz bizga kerak emas',
         body:
-          'Qonun talab qilgani uchun emas — shunday qilib loyihalaganimiz uchun. Mahsulotlarimizda hisob ham, tahlil tizimi ham yoʻq, chunki yaxshi narsa yasash uchun siz haqingizda hech narsa bilishimiz shart emas.',
+          'Qonun talab qilgani uchun emas — shunday qilib loyihalaganimiz uchun. Siz haqingizda profil tuzmaymiz, oʻzimizdan tahlil tizimi qoʻshmaymiz va hisob talab qilmaymiz, chunki yaxshi narsa yasash uchun siz haqingizda hech narsa bilishimiz shart emas.',
       },
       {
         icon: 'offline',
@@ -537,8 +537,8 @@ export const uz: SiteContent = {
       {
         heading: 'Qisqasi',
         paragraphs: [
-          'Biz sizdan shaxsiy maʼlumot soʻramaymiz va uni yigʻmaymiz. Yaratadigan hisob yoʻq, ilovalarimizda tahlil tizimi yoʻq va bizning tomonda siz haqingizda hech qanday profil yoʻq.',
-          'Yagona istisno — bitta oʻyinimizdagi reklama, va u faqat siz ataylab “reklama koʻrish” tugmasini bosganingizda ishlaydi. Quyida hammasi batafsil.',
+          'Biz sizdan shaxsiy maʼlumot soʻramaymiz va uni yigʻmaymiz. Yaratadigan hisob yoʻq, oʻzimizdan tahlil tizimi qoʻshmaymiz va bizning tomonda siz haqingizda hech qanday profil yoʻq.',
+          'Google bilan ikkita narsa bogʻliq va ikkalasi ham sizning tanlovingiz: Soʻzbogʻdagi ixtiyoriy mukofotli reklama — faqat siz tugmani bosganingizda ishlaydi, va ilova ichidagi xaridlar — ularni boshidan oxirigacha Google Play boshqaradi. Quyida har birining nimani koʻrishi aniq yozilgan.',
         ],
       },
       {
@@ -555,13 +555,13 @@ export const uz: SiteContent = {
           'Joylashuvingiz',
           'Kontaktlaringiz, rasmlaringiz, fayllaringiz yoki mikrofoningiz',
           'Hisob yoki kirish maʼlumotlari — umuman hisob tizimi yoʻq',
-          'Tahlil yoki xulq-atvor maʼlumoti — analitika SDK ishlatmaymiz',
+          'Qanday oʻynashingiz haqidagi tahlil — oʻzimizdan analitika SDK qoʻshmaymiz (Google reklama xizmati quyida alohida yozilgan)',
         ],
       },
       {
         heading: 'Qurilmangizda nima saqlanadi',
         paragraphs: [
-          'Oʻyinlarimiz faqat ishlashi uchun kerak boʻlgan narsani saqlaydi, va faqat sizning qurilmangizda:',
+          'Oʻyinlarimiz faqat ishlashi uchun kerak boʻlgan narsani saqlaydi, va uni sizning qurilmangizda saqlaydi:',
         ],
         bullets: [
           'Qaysi bosqichdasiz va qaysilari ochilgan',
@@ -614,6 +614,7 @@ export const uz: SiteContent = {
         paragraphs: [
           'Android ilovalarimizda Google’ning ikkita xizmati ishtirok etadi: ixtiyoriy mukofotli reklama uchun Google AdMob va ixtiyoriy xaridlar uchun Google Play Billing. Ikkalasi ham Google’ning oʻz maxfiylik shartlari asosida ishlaydi.',
           'Brauzer oʻyinimiz three.js grafika kutubxonasini ochiq kod tarmogʻidan (cdnjs) yuklaydi. Bu soʻrov, har qanday veb-soʻrov kabi, IP manzilingizni oʻsha tarmoqqa koʻrsatadi; boshqa hech qanday maʼlumot yuborilmaydi.',
+          'TASHKENT CITY ni Telegram ichida ham ochish mumkin. Shunda oʻyin progressingiz nusxasini Telegramning oʻz bulut xotirasida, sizning hisobingizda saqlaydi — qurilma almashsa ham progress qoladi. U Telegram profilingizni oʻqimaydi va bu maʼlumot bizga kelmaydi. Oddiy brauzerda ochilsa, bunday nusxa umuman yasalmaydi.',
         ],
       },
       {
@@ -782,7 +783,7 @@ export const uz: SiteContent = {
       },
       {
         q: 'Progressim qayerda saqlanadi va qurilmani almashtirsam nima boʻladi?',
-        a: 'Progress faqat qurilmangizda saqlanadi — serverga hech narsa yuborilmaydi. Bu ataylab shunday, va aynan shuning uchun sizdan hisob soʻramaymiz. Ammo ilovani oʻchirsangiz, brauzer maʼlumotini tozalasangiz yoki yangi qurilmaga oʻtsangiz, progress siz bilan koʻchmaydi.',
+        a: 'Soʻzbogʻda progress faqat qurilmangizda saqlanadi — serverga hech narsa yuborilmaydi, aynan shuning uchun sizdan hisob soʻramaymiz. TASHKENT CITY oddiy brauzerda ham xuddi shunday ishlaydi. Yagona istisno: TASHKENT CITY ni Telegram ichida ochsangiz, u nusxani Telegram bulut xotirangizda ham saqlaydi — shunda qurilma almashsa ham progress qoladi. Boshqa hollarda ilovani oʻchirish, brauzer maʼlumotini tozalash yoki qurilma almashtirish progressni boshidan boshlashni anglatadi.',
       },
       {
         q: 'Maʼlumotimni qanday oʻchiraman?',
