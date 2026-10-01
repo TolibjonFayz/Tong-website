@@ -109,7 +109,7 @@ export const en: SiteContent = {
     lead:
       '“Tong” is the Uzbek word for dawn — the moment right before the sun clears the horizon. We are a small studio in Tashkent making games, apps and web products with that same unhurried care.',
     stats: [
-      { value: '6', label: 'Products built or building' },
+      { value: '5', label: 'Products built or building' },
       { value: '2,363', label: 'Uzbek words written by hand' },
       { value: '25 km²', label: 'Of Tashkent rebuilt in 3D' },
       { value: '0', label: 'Accounts you have to create' },
@@ -213,16 +213,6 @@ export const en: SiteContent = {
       meta: [
         { label: 'Platform', value: 'Android' },
         { label: 'Stage', value: 'Finished, in testing' },
-      ],
-    },
-    'shelf-sort': {
-      name: 'Shelf Sort',
-      tagline: 'Sort it out, shelf by shelf',
-      blurb:
-        'Items arrive one at a time and you choose which shelf each one goes on. Get three of a kind together and they clear. Shelf space is tight, so it is really a game about what you are willing to commit to — with undo, shuffle and a hint on hand for when you get it wrong.',
-      meta: [
-        { label: 'Platform', value: 'Android' },
-        { label: 'Stage', value: 'In development' },
       ],
     },
     'bilim-manba': {

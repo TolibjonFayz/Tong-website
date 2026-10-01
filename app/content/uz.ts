@@ -109,7 +109,7 @@ export const uz: SiteContent = {
     lead:
       '“Tong” — quyosh ufqdan chiqishidan oldingi payt. Osmonda rang bor, lekin kun hali boshlanmagan. Biz Toshkentdagi kichik studiyamiz: oʻyin, dastur va veb-mahsulotlarni ana shunday shoshmasdan yasaymiz.',
     stats: [
-      { value: '6', label: 'Yasalgan va yasalayotgan mahsulot' },
+      { value: '5', label: 'Yasalgan va yasalayotgan mahsulot' },
       { value: '2 363', label: 'Qoʻlda yozilgan oʻzbekcha soʻz' },
       { value: '25 km²', label: '3D da qayta qurilgan Toshkent' },
       { value: '0', label: 'Yaratishingiz kerak boʻlgan hisob' },
@@ -213,16 +213,6 @@ export const uz: SiteContent = {
       meta: [
         { label: 'Platforma', value: 'Android' },
         { label: 'Bosqich', value: 'Bitgan, sinovda' },
-      ],
-    },
-    'shelf-sort': {
-      name: 'Shelf Sort',
-      tagline: 'Javon-javon qilib tartibga sol',
-      blurb:
-        'Buyumlar birma-bir keladi, siz har birini qaysi javonga qoʻyishni hal qilasiz. Bir xilidan uchtasi yigʻilsa — yoʻqoladi. Javonda joy tor, shuning uchun bu aslida qaysi qarorga sodiq qolish haqidagi oʻyin. Xato qilsangiz: orqaga qaytarish, aralashtirish va yordam tugmalari bor.',
-      meta: [
-        { label: 'Platforma', value: 'Android' },
-        { label: 'Bosqich', value: 'Ishlab chiqilmoqda' },
       ],
     },
     'bilim-manba': {
