@@ -80,6 +80,11 @@ export const en: SiteContent = {
       description:
         'How TONG INC handles data across its website, games and software: no required accounts, nothing sold, and a plain account of exactly what leaves your device and why.',
     },
+    deleteAccount: {
+      title: 'Delete your account | TONG INC',
+      description:
+        'How to delete the account and cloud data linked to Google sign-in in Soʻzbogʻ and Wordio, from inside the app or by email.',
+    },
     terms: {
       title: 'Terms of Use | TONG INC',
       description:
@@ -657,6 +662,55 @@ export const en: SiteContent = {
     ],
   },
 
+  deleteAccount: {
+    heading: 'Delete your account',
+    lead:
+      'How to delete the account and data linked to Google sign-in in Soʻzbogʻ and Wordio, games developed by TONG INC.',
+    sections: [
+      {
+        heading: 'In the app',
+        paragraphs: [
+          'The fastest way. It deletes everything at once:',
+        ],
+        bullets: [
+          'Open Soʻzbogʻ or Wordio',
+          'Go to Settings → Account',
+          'Tap “Delete account” (in Soʻzbogʻ: “Hisobni oʻchirish”) and confirm',
+          'If asked, choose the Google account you signed in with',
+        ],
+      },
+      {
+        heading: 'If the app is no longer installed',
+        paragraphs: [
+          'Write to tolibjonfayz@gmail.com from the Google account you signed in with. Put “Delete account” and the name of the game in the subject. We delete your account within 30 days and confirm by email.',
+        ],
+      },
+      {
+        heading: 'What is deleted',
+        paragraphs: [
+          'Both of these are deleted permanently, and nothing is kept afterwards:',
+        ],
+        bullets: [
+          'Your sign-in record: your Google account name, email address and account identifier',
+          'The copy of your game progress saved in the cloud: level, coins, settings and daily streak',
+        ],
+      },
+      {
+        heading: 'What is not affected',
+        paragraphs: [
+          'Progress saved on your phone stays there, so you can keep playing without an account. To erase it as well, reset your progress in Settings or uninstall the app.',
+          'Anonymous gameplay statistics are not linked to your account. Google Analytics deletes them automatically at the end of its data retention period.',
+          'Purchases are recorded in your Google Play account, not by us.',
+        ],
+      },
+      {
+        heading: 'Questions',
+        paragraphs: [
+          'Write to tolibjonfayz@gmail.com. We are in Tashkent, Uzbekistan.',
+        ],
+      },
+    ],
+  },
   terms: {
     heading: 'Terms of Use',
     lead:
@@ -851,6 +905,7 @@ export const en: SiteContent = {
     legalHeading: 'Legal',
     connectHeading: 'Contact',
     privacy: 'Privacy Policy',
+    deleteAccount: 'Delete account',
     terms: 'Terms of Use',
     support: 'Support',
     rights: 'All rights reserved.',

@@ -80,6 +80,11 @@ export const uz: SiteContent = {
       description:
         'TONG INC sayti, oʻyinlari va dasturlari maʼlumotni qanday boshqaradi: majburiy hisob yoʻq, hech narsa sotilmaydi, va qurilmangizdan nima chiqishi hamda nima uchunligi ochiq yozilgan.',
     },
+    deleteAccount: {
+      title: 'Hisobni oʻchirish | TONG INC',
+      description:
+        'Soʻzbogʻ va Wordio’dagi Google bilan kirishga bogʻlangan hisob va bulutdagi maʼlumotni ilovaning oʻzidan yoki email orqali oʻchirish.',
+    },
     terms: {
       title: 'Foydalanish shartlari | TONG INC',
       description:
@@ -657,6 +662,55 @@ export const uz: SiteContent = {
     ],
   },
 
+  deleteAccount: {
+    heading: 'Hisobni oʻchirish',
+    lead:
+      'TONG INC ishlab chiqqan Soʻzbogʻ va Wordio oʻyinlarida Google bilan kirishga bogʻlangan hisob va maʼlumotni qanday oʻchirish mumkin.',
+    sections: [
+      {
+        heading: 'Ilovaning oʻzida',
+        paragraphs: [
+          'Eng tez yoʻl. Hammasi bir yoʻla oʻchadi:',
+        ],
+        bullets: [
+          'Soʻzbogʻ yoki Wordio’ni oching',
+          'Sozlamalar → Hisob boʻlimiga kiring',
+          '“Hisobni oʻchirish” (Wordio’da: “Delete account”) tugmasini bosing va tasdiqlang',
+          'Soʻralsa, kirgan Google hisobingizni tanlang',
+        ],
+      },
+      {
+        heading: 'Ilova telefonda boʻlmasa',
+        paragraphs: [
+          'Kirgan Google hisobingizdan tolibjonfayz@gmail.com manziliga yozing. Mavzuga “Hisobni oʻchirish” va oʻyin nomini yozing. Hisobingizni 30 kun ichida oʻchiramiz va email orqali tasdiqlaymiz.',
+        ],
+      },
+      {
+        heading: 'Nima oʻchiriladi',
+        paragraphs: [
+          'Ikkalasi ham butunlay oʻchiriladi, keyin hech narsa saqlanib qolmaydi:',
+        ],
+        bullets: [
+          'Kirish yozuvingiz: Google hisobingizdagi ism, email manzil va hisob identifikatori',
+          'Bulutda saqlangan oʻyin progressi nusxasi: bosqich, tanga, sozlamalar va kunlik ketma-ketlik',
+        ],
+      },
+      {
+        heading: 'Nimaga taʼsir qilmaydi',
+        paragraphs: [
+          'Telefondagi progress joyida qoladi — hisobsiz oʻynashda davom etasiz. Uni ham oʻchirish uchun sozlamalarda progressni tozalang yoki ilovani oʻchiring.',
+          'Nomsiz oʻyin statistikasi hisobingizga bogʻlanmagan. Uni Google Analytics saqlash muddati tugagach oʻzi avtomatik oʻchiradi.',
+          'Xaridlar bizda emas, Google Play hisobingizda yoziladi.',
+        ],
+      },
+      {
+        heading: 'Savollar',
+        paragraphs: [
+          'tolibjonfayz@gmail.com manziliga yozing. Biz Toshkent, Oʻzbekistondamiz.',
+        ],
+      },
+    ],
+  },
   terms: {
     heading: 'Foydalanish shartlari',
     lead:
@@ -851,6 +905,7 @@ export const uz: SiteContent = {
     legalHeading: 'Huquqiy',
     connectHeading: 'Aloqa',
     privacy: 'Maxfiylik siyosati',
+    deleteAccount: 'Hisobni oʻchirish',
     terms: 'Foydalanish shartlari',
     support: 'Yordam',
     rights: 'Barcha huquqlar himoyalangan.',

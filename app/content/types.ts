@@ -99,6 +99,7 @@ export interface SiteContent {
     about: PageMeta
     contact: PageMeta
     privacy: PageMeta
+    deleteAccount: PageMeta
     terms: PageMeta
     support: PageMeta
     notFound: PageMeta
@@ -227,6 +228,13 @@ export interface SiteContent {
     sections: Section[]
   }
 
+  /** Google Play talabi: hisobni oʻchirish yoʻlini koʻrsatadigan sahifa. */
+  deleteAccount: {
+    heading: string
+    lead: string
+    sections: Section[]
+  }
+
   terms: {
     heading: string
     lead: string
@@ -258,6 +266,7 @@ export interface SiteContent {
     legalHeading: string
     connectHeading: string
     privacy: string
+    deleteAccount: string
     terms: string
     support: string
     rights: string

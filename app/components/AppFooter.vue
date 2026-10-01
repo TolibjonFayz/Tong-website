@@ -96,6 +96,12 @@ const year = new Date().getFullYear()
             </li>
             <li>
               <NuxtLink
+                :to="localePath('/delete-account')"
+                class="text-fg-muted transition-colors hover:text-accent"
+              >{{ content.footer.deleteAccount }}</NuxtLink>
+            </li>
+            <li>
+              <NuxtLink
                 :to="localePath('/terms')"
                 class="text-fg-muted transition-colors hover:text-accent"
               >{{ content.footer.terms }}</NuxtLink>
