@@ -74,6 +74,16 @@ export const PRODUCTS: Product[] = [
     hue: ['#f0b429', '#7bb648'],
   },
   {
+    // bilimmanba.uz — o'zbek tilidagi bilim/maqola platformasi (Nuxt + NestJS).
+    // Ikonka saytdagi logodan yasalgan: public/images/bilim-manba-icon-*.webp
+    slug: 'bilim-manba',
+    kind: 'app',
+    status: 'live',
+    url: 'https://bilimmanba.uz',
+    icon: 'bilim-manba-icon',
+    hue: ['#5850ec', '#ff6584'],
+  },
+  {
     slug: 'ombor',
     kind: 'app',
     status: 'building',

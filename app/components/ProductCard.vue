@@ -148,8 +148,11 @@ const statusTone = computed(() => ({
                  border-border-strong px-4 py-2 text-xs font-semibold
                  text-fg-body transition-colors hover:border-accent"
         >
-          <AppIcon name="play" :size="13" />
-          {{ content.cta.openGame }}
+          <AppIcon
+            :name="product.kind === 'game' ? 'play' : 'external'"
+            :size="13"
+          />
+          {{ product.kind === 'game' ? content.cta.openGame : content.cta.openSite }}
         </a>
       </div>
     </div>

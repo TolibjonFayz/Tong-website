@@ -65,6 +65,8 @@ export interface SiteContent {
     playStore: string
     playStoreNote: string
     openGame: string
+    /** Veb-platforma / dastur uchun tashqi havola tugmasi */
+    openSite: string
     seeProduct: string
     allWork: string
     contactUs: string

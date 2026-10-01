@@ -19,6 +19,7 @@ export const uz: SiteContent = {
     playStore: 'Google Play’da koʻrish',
     playStoreNote: 'Hozircha yopiq testda',
     openGame: 'Brauzerda oʻynash',
+    openSite: 'Saytni ochish',
     seeProduct: 'Batafsil',
     allWork: 'Barcha ishlarimiz',
     contactUs: 'Bogʻlanish',
@@ -53,7 +54,7 @@ export const uz: SiteContent = {
     work: {
       title: 'Ishlarimiz — TONG INC oʻyinlari va dasturlari',
       description:
-        'TONG INC yaratgan va yaratayotgan hamma narsa: brauzer va mobil oʻyinlar, sotuvchilar uchun ombor dasturi, veb-mahsulotlar. Toshkentda yasalgan.',
+        'TONG INC yaratgan va yaratayotgan hamma narsa: brauzer va mobil oʻyinlar, Bilim Manba bilim platformasi, sotuvchilar uchun ombor dasturi. Toshkentda yasalgan.',
     },
     sozbog: {
       title: 'Soʻzbogʻ — oʻzbekcha soʻz jumbogʻi | TONG INC',
@@ -68,7 +69,7 @@ export const uz: SiteContent = {
     about: {
       title: 'TONG INC haqida — Oʻzbekistondagi mustaqil studiya',
       description:
-        'TONG INC — Sardor Ikhtiyorov Toshkentda tashkil qilgan kichik mustaqil studiya. Internetsiz ishlaydigan va sizdan roʻyxatdan oʻtishni soʻramaydigan oʻyin, dastur va veb-mahsulotlar yaratamiz.',
+        'TONG INC — Sardor Ikhtiyorov Toshkentda tashkil qilgan kichik mustaqil studiya. Internetsiz ishlaydigan va roʻyxatdan oʻtishni soʻramaydigan oʻyinlar, dasturlar va Bilim Manba kabi veb-platformalar yaratamiz.',
     },
     contact: {
       title: 'TONG INC bilan aloqa — Toshkent, Oʻzbekiston',
@@ -108,7 +109,7 @@ export const uz: SiteContent = {
     lead:
       '“Tong” — quyosh ufqdan chiqishidan oldingi payt. Osmonda rang bor, lekin kun hali boshlanmagan. Biz Toshkentdagi kichik studiyamiz: oʻyin, dastur va veb-mahsulotlarni ana shunday shoshmasdan yasaymiz.',
     stats: [
-      { value: '5', label: 'Yasalgan va yasalayotgan mahsulot' },
+      { value: '6', label: 'Yasalgan va yasalayotgan mahsulot' },
       { value: '2 363', label: 'Qoʻlda yozilgan oʻzbekcha soʻz' },
       { value: '25 km²', label: '3D da qayta qurilgan Toshkent' },
       { value: '0', label: 'Yaratishingiz kerak boʻlgan hisob' },
@@ -126,9 +127,9 @@ export const uz: SiteContent = {
         },
         {
           icon: 'shield',
-          title: 'Roʻyxatdan oʻtish degan narsa yoʻq',
+          title: 'Roʻyxatdan oʻtish majburiy emas',
           body:
-            'Hisob shart emas, email soʻralmaydi. Progressingiz qurilmangizda qoladi — agar oʻzingiz uni Google bilan saqlab qoʻyishni tanlamasangiz. Bundan tashqari faqat Google oʻzingiz soʻragan reklama yoki qilgan xaridingiz uchun kerak boʻlgani va nomsiz oʻyin statistikasi tashqariga chiqadi.',
+            'Oʻyinlarimiz uchun hisob ham, email ham kerak emas, Bilim Manba’da esa maqolani hisobsiz oʻqiysiz. Oʻyindagi progressingiz qurilmangizda qoladi — agar oʻzingiz uni Google bilan saqlab qoʻyishni tanlamasangiz. Bundan tashqari faqat Google oʻzingiz soʻragan reklama yoki qilgan xaridingiz uchun kerak boʻlgani va nomsiz oʻyin statistikasi tashqariga chiqadi.',
         },
         {
           icon: 'language',
@@ -175,7 +176,7 @@ export const uz: SiteContent = {
     lead:
       'Oʻyinlar, biznes dasturlari va veb-mahsulotlar — TONG INC chiqargan va hozir yasayotgan hamma narsa. Uzun roʻyxatdan koʻra, oʻzimiz faxrlanadigan bir nechta narsa maʼqul, shuning uchun bu sahifa ataylab sekin oʻsadi.',
     gamesHeading: 'Oʻyinlar',
-    appsHeading: 'Dasturlar',
+    appsHeading: 'Dasturlar va veb-platformalar',
     moreHeading: 'Saytlar va buyurtma ishlari',
     moreBody:
       'Oʻz mahsulotlarimiz bilan bir qatorda saytlar va maxsus dasturlar ham yasaymiz. Biror narsa kerak boʻlsa — mahsulot sayti, ochilish sahifasi, ichki dastur — yozing va nima qilishi kerakligini ayting.',
@@ -222,6 +223,17 @@ export const uz: SiteContent = {
       meta: [
         { label: 'Platforma', value: 'Android' },
         { label: 'Bosqich', value: 'Ishlab chiqilmoqda' },
+      ],
+    },
+    'bilim-manba': {
+      name: 'Bilim Manba',
+      tagline: 'Oʻzbek tilidagi bilim va maqolalar platformasi',
+      blurb:
+        'Fan, tarix, kino, sport va texnologiya haqida oʻzbek tilida yozilgan 70 dan ortiq maqola, 11 ta yoʻnalish. Maqoladagi tushunarsiz joyni sunʼiy intellektdan soʻrash mumkin. Oʻqish bepul va hisobsiz; roʻyxatdan oʻtish faqat izoh qoldirish va maqolani saqlash uchun kerak.',
+      meta: [
+        { label: 'Platforma', value: 'Veb (kompyuter va telefon)' },
+        { label: 'Til', value: 'Oʻzbek tili' },
+        { label: 'Narx', value: 'Bepul' },
       ],
     },
     'ombor': {
@@ -467,7 +479,7 @@ export const uz: SiteContent = {
         icon: 'shield',
         title: 'Maʼlumotingiz bizga kerak emas',
         body:
-          'Qonun talab qilgani uchun emas — shunday qilib loyihalaganimiz uchun. Siz haqingizda profil tuzmaymiz va hisob talab qilmaymiz. Yigʻadiganimiz faqat oʻyinning oʻzi haqidagi nomsiz statistika — masalan, qaysi bosqich juda qiyin — chunki yaxshi narsa yasash uchun shuning oʻzi yetarli.',
+          'Qonun talab qilgani uchun emas — shunday qilib loyihalaganimiz uchun. Siz haqingizda profil tuzmaymiz va hisob talab qilmaymiz. Oʻyinlarimizda yigʻadiganimiz faqat oʻyinning oʻzi haqidagi nomsiz statistika — masalan, qaysi bosqich juda qiyin — chunki yaxshi narsa yasash uchun shuning oʻzi yetarli.',
       },
       {
         icon: 'offline',
@@ -624,6 +636,14 @@ export const uz: SiteContent = {
           'Aloqa formasini yuborganingizda siz yozgan narsa — ism, email, mavzu va xat matni — hosting provayderimizga oʻtadi va toʻgʻridan-toʻgʻri bizning Telegramimizga yetkaziladi, yoqib qoʻyilgan boʻlsa email bilan ham. Bunga boshqa hech narsa qoʻshilmaydi va u maʼlumotlar bazasida saqlanmaydi. Formani ishlatishni istamasangiz, oʻsha sahifada email manzilimiz va Telegramimiz turibdi — toʻgʻridan-toʻgʻri yozsangiz ham boʻladi.',
           'Yorugʻ yoki qorongʻi rejim tanlovingiz faqat brauzeringizda saqlanadi, shuning uchun sayt uni keyingi safar eslaydi. U hech qayerga yuborilmaydi.',
           'Hosting provayderimiz xavfsizlik uchun oddiy server jurnallarini — IP manzil va soʻralgan sahifalarni — saqlashi mumkin. Biz ulardan hech qanday profil tuzmaymiz.',
+        ],
+      },
+      {
+        heading: 'Bilim Manba',
+        paragraphs: [
+          'Bilim Manba (bilimmanba.uz) — TONG INC’ning bilim platformasi. U yuqoridagi oʻyinlardan farqli ishlaydi, shuning uchun alohida yozamiz.',
+          'Maqolalarni oʻqish uchun hisob kerak emas. Roʻyxatdan oʻtsangiz (ism, email va parol — parol shifrlangan holda saqlanadi), izoh qoldirish, maqolani saqlash va yoqtirish mumkin. Saytga tashriflar Google Analytics va Vercel Analytics orqali hisoblanadi. “AI tushuntirsin” tugmasini bossangiz, savolingiz va maqola matni javob olish uchun Groq sunʼiy intellekt xizmatiga yuboriladi.',
+          'Toʻliq maʼlumot Bilim Manba’ning oʻz maxfiylik siyosatida: bilimmanba.uz/privacy-policy.',
         ],
       },
       {

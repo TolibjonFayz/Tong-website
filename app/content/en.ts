@@ -19,6 +19,7 @@ export const en: SiteContent = {
     playStore: 'View on Google Play',
     playStoreNote: 'Currently in closed testing',
     openGame: 'Play in your browser',
+    openSite: 'Visit the site',
     seeProduct: 'Read more',
     allWork: 'See all our work',
     contactUs: 'Get in touch',
@@ -53,7 +54,7 @@ export const en: SiteContent = {
     work: {
       title: 'Our Work — Games & Software by TONG INC',
       description:
-        'Everything TONG INC has built and is building: browser and mobile games, warehouse software for sellers, and web products. Made in Tashkent, Uzbekistan.',
+        'Everything TONG INC has built and is building: browser and mobile games, the Bilim Manba knowledge platform, and warehouse software for sellers. Made in Tashkent, Uzbekistan.',
     },
     sozbog: {
       title: 'Soʻzbogʻ — Uzbek Word Puzzle Game | TONG INC',
@@ -68,7 +69,7 @@ export const en: SiteContent = {
     about: {
       title: 'About TONG INC — Independent Studio in Uzbekistan',
       description:
-        'TONG INC is a small independent studio founded by Sardor Ikhtiyorov in Tashkent, building games, apps and web products that work offline and never ask you to sign up.',
+        'TONG INC is a small independent studio founded by Sardor Ikhtiyorov in Tashkent, building games that work offline and never ask you to sign up, plus apps and web platforms such as Bilim Manba.',
     },
     contact: {
       title: 'Contact TONG INC — Tashkent, Uzbekistan',
@@ -108,7 +109,7 @@ export const en: SiteContent = {
     lead:
       '“Tong” is the Uzbek word for dawn — the moment right before the sun clears the horizon. We are a small studio in Tashkent making games, apps and web products with that same unhurried care.',
     stats: [
-      { value: '5', label: 'Products built or building' },
+      { value: '6', label: 'Products built or building' },
       { value: '2,363', label: 'Uzbek words written by hand' },
       { value: '25 km²', label: 'Of Tashkent rebuilt in 3D' },
       { value: '0', label: 'Accounts you have to create' },
@@ -126,9 +127,9 @@ export const en: SiteContent = {
         },
         {
           icon: 'shield',
-          title: 'Nothing to sign up for',
+          title: 'No sign-up wall',
           body:
-            'No account needed and no email address to hand over. Your progress stays on your device unless you choose to back it up with Google. Beyond that, only what Google needs for an ad you asked for or a purchase you made, plus anonymous gameplay statistics, ever leaves it.',
+            'Our games need no account and no email address, and on Bilim Manba you can read every article without one. Your game progress stays on your device unless you choose to back it up with Google. Beyond that, only what Google needs for an ad you asked for or a purchase you made, plus anonymous gameplay statistics, ever leaves it.',
         },
         {
           icon: 'language',
@@ -175,7 +176,7 @@ export const en: SiteContent = {
     lead:
       'Games, business software and web products — everything TONG INC has shipped or is building right now. We would rather have a few things we are proud of than a long list, so this page grows slowly on purpose.',
     gamesHeading: 'Games',
-    appsHeading: 'Apps & software',
+    appsHeading: 'Apps & web platforms',
     moreHeading: 'Websites and contract work',
     moreBody:
       'Alongside our own products we build websites and custom software. If you need something made — a product site, a landing page, an internal tool — write to us and tell us what it has to do.',
@@ -222,6 +223,17 @@ export const en: SiteContent = {
       meta: [
         { label: 'Platform', value: 'Android' },
         { label: 'Stage', value: 'In development' },
+      ],
+    },
+    'bilim-manba': {
+      name: 'Bilim Manba',
+      tagline: 'A knowledge and article platform in Uzbek',
+      blurb:
+        '70+ articles written in Uzbek on science, history, film, sport and technology, across 11 topics. Stuck on a passage? Ask the built-in AI to explain it. Reading is free and needs no account; signing up is only for commenting and saving articles.',
+      meta: [
+        { label: 'Platform', value: 'Web (desktop & mobile)' },
+        { label: 'Language', value: 'Uzbek' },
+        { label: 'Price', value: 'Free' },
       ],
     },
     'ombor': {
@@ -467,7 +479,7 @@ export const en: SiteContent = {
         icon: 'shield',
         title: 'We do not want your data',
         body:
-          'Not as a compliance position — as a design choice. We build no profile of you and require no account. The only statistics we collect are anonymous ones about the game itself, such as which levels are too hard, because that is all we need to make something good.',
+          'Not as a compliance position — as a design choice. We build no profile of you and require no account. In our games, the only statistics we collect are anonymous ones about the game itself, such as which levels are too hard, because that is all we need to make something good.',
       },
       {
         icon: 'offline',
@@ -624,6 +636,14 @@ export const en: SiteContent = {
           'When you send the contact form, what you typed — your name, email address, subject and message — goes to our hosting provider and is forwarded straight to us on Telegram, and by email if we have that turned on. Nothing else is attached to it and it is not kept in a database. If you would rather not use the form, the same page shows our email address and Telegram handle so you can write directly.',
           'Your light or dark mode preference is stored in your browser only, so the site remembers it next time. It is never sent anywhere.',
           'Our hosting provider may keep standard server logs, such as IP addresses and requested pages, for security and reliability. We do not use those logs to build any profile of visitors.',
+        ],
+      },
+      {
+        heading: 'Bilim Manba',
+        paragraphs: [
+          'Bilim Manba (bilimmanba.uz) is TONG INC’s knowledge platform. It works differently from the games above, so it gets its own section.',
+          'Reading articles needs no account. If you sign up (name, email and a password, which is stored hashed), you can comment on, save and like articles. Visits are counted with Google Analytics and Vercel Analytics. When you use the “Explain with AI” button, your question and the article text are sent to the Groq AI service to get an answer.',
+          'The full details are in Bilim Manba’s own privacy policy: bilimmanba.uz/privacy-policy.',
         ],
       },
       {
