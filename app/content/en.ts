@@ -78,7 +78,7 @@ export const en: SiteContent = {
     privacy: {
       title: 'Privacy Policy | TONG INC',
       description:
-        'How TONG INC handles data across its website, games and software: no accounts, no sign-ups, and a plain account of exactly what Google sees when you watch an ad or buy something.',
+        'How TONG INC handles data across its website, games and software: no required accounts, nothing sold, and a plain account of exactly what leaves your device and why.',
     },
     terms: {
       title: 'Terms of Use | TONG INC',
@@ -123,7 +123,7 @@ export const en: SiteContent = {
           icon: 'shield',
           title: 'Nothing to sign up for',
           body:
-            'No accounts, no sign-ups, no email address to hand over. Your progress stays on your device. The only thing that ever leaves it is what Google needs to show an ad you asked for, or to process a purchase you made.',
+            'No account needed and no email address to hand over. Your progress stays on your device unless you choose to back it up with Google. Beyond that, only what Google needs for an ad you asked for or a purchase you made, plus anonymous gameplay statistics, ever leaves it.',
         },
         {
           icon: 'language',
@@ -311,7 +311,7 @@ export const en: SiteContent = {
     detailsHeading: 'Details',
     privacyHeading: 'Privacy in Soʻzbogʻ',
     privacyBody:
-      'Soʻzbogʻ asks you for nothing: no name, no email, no phone number, no location, no contacts, no photos. There is no account to create and we add no analytics of our own. Your progress lives on your phone and is deleted with the app. Two things do reach Google: press the optional “watch an ad” button and Google AdMob receives your device advertising ID so it can pick an ad; buy coins and Google Play handles the payment end to end. We never see your card details, and you can reset that advertising ID at any time in Android settings.',
+      'Soʻzbogʻ never asks for your phone number, location, contacts or photos, and you can play it without any account. Your progress lives on your phone. A few things do reach Google: press the optional “watch an ad” button and Google AdMob receives your device advertising ID so it can pick an ad; buy coins and Google Play handles the payment end to end; anonymous gameplay statistics help us balance the levels; and if you choose to sign in with Google, your progress is backed up so you can continue on a new phone. We never see your card details, and you can reset that advertising ID at any time in Android settings.',
   },
 
   tashkentCity: {
@@ -462,7 +462,7 @@ export const en: SiteContent = {
         icon: 'shield',
         title: 'We do not want your data',
         body:
-          'Not as a compliance position — as a design choice. We build no profile of you, add no analytics of our own and require no account, because we do not need to know anything about you to make something good.',
+          'Not as a compliance position — as a design choice. We build no profile of you and require no account. The only statistics we collect are anonymous ones about the game itself, such as which levels are too hard, because that is all we need to make something good.',
       },
       {
         icon: 'offline',
@@ -526,6 +526,7 @@ export const en: SiteContent = {
   legal: {
     updated: 'Last updated',
     updatedDate: 'August 25, 2026',
+    privacyUpdatedDate: 'October 1, 2026',
     tocHeading: 'On this page',
   },
 
@@ -537,8 +538,8 @@ export const en: SiteContent = {
       {
         heading: 'The short version',
         paragraphs: [
-          'We do not ask for your personal information and we do not collect it. There is no account to create, we add no analytics of our own, and there is no profile of you anywhere on our side.',
-          'Two things do involve Google, and both are your choice: the optional rewarded ads in Soʻzbogʻ, which run only when you press the button asking for one, and in-app purchases, which Google Play handles from start to finish. Everything below explains exactly what each one sees.',
+          'We never ask for your phone number or address, and our games work without any account. Your progress lives on your device.',
+          'A few things do leave your device, and this page explains each one exactly: optional rewarded ads and in-app purchases, both handled by Google; anonymous gameplay statistics in our word games; and an optional Google sign-in that backs up your progress.',
         ],
       },
       {
@@ -549,13 +550,15 @@ export const en: SiteContent = {
       },
       {
         heading: 'What we do not collect',
-        paragraphs: ['Our applications never ask for and never collect:'],
+        paragraphs: [
+          'Our applications never ask for and never collect:',
+        ],
         bullets: [
-          'Your name, phone number or email address',
-          'Your location',
+          'Your phone number or postal address',
+          'Your precise location',
           'Your contacts, photos, files or microphone',
-          'Any account or login credentials — there is no account system at all',
-          'Analytics about how you play — we add no analytics SDK of our own (Google’s ad service is covered separately below)',
+          'Anything about what you do in other apps or on other websites',
+          'Your name and email address, unless you choose to sign in with Google (described below)',
         ],
       },
       {
@@ -571,16 +574,32 @@ export const en: SiteContent = {
         ],
       },
       {
+        heading: 'Optional sign-in and cloud save',
+        paragraphs: [
+          'Soʻzbogʻ and Wordio let you sign in with your Google account in Settings, so your progress survives a change of phone. This is optional: both games are fully playable without it.',
+          'When you sign in, Google Firebase Authentication receives your Google account name, email address and an account identifier, and your game progress (level, coins, settings and daily streak) is stored in Google Firebase Cloud Firestore under that identifier. Only your own signed-in account can read or change that copy.',
+          'We use this data only to keep your progress in sync. We never sell it, never share it with advertisers and never use it to contact you.',
+        ],
+      },
+      {
+        heading: 'Gameplay statistics',
+        paragraphs: [
+          'Soʻzbogʻ and Wordio send anonymous gameplay events to Google Analytics for Firebase, so we can see which levels are too hard or too easy and fix them. For example: a level was started or finished, how long it took, a hint was used, a shop item was bought.',
+          'These events carry no name, email address or account ID. Google Analytics links them to a random app-instance identifier and may estimate an approximate, country-level location from your IP address.',
+        ],
+      },
+      {
         heading: 'How to delete everything',
         paragraphs: [
-          'Because nothing is stored on our servers, deleting your data does not require asking us. In Soʻzbogʻ, open Settings → Manage → Clear progress, and everything saved is erased immediately.',
-          'Uninstalling the app has exactly the same effect. For our browser game, clearing your browser’s site data for that page does the same. There is no copy of it anywhere else.',
+          'Progress on your device: in Soʻzbogʻ or Wordio, open Settings and reset your progress, and everything saved on the phone is erased immediately. Uninstalling the app has the same effect. For our browser game, clearing your browser’s site data for that page does the same.',
+          'Your sign-in account and cloud copy: if you signed in with Google, write to tolibjonfayz@gmail.com from that Google account and ask us to delete your account. We delete your stored progress and your sign-in record within 30 days and confirm by email.',
+          'Gameplay statistics are deleted automatically by Google Analytics at the end of its data retention period.',
         ],
       },
       {
         heading: 'Advertising',
         paragraphs: [
-          'Advertising appears in Soʻzbogʻ only, it is optional, and it is never automatic. Ads do not appear between levels, on the win screen, or anywhere else on their own. They appear only when you press the “watch an ad” button in the shop to earn coins.',
+          'Advertising appears in Soʻzbogʻ and Wordio only, it is optional, and it is never automatic. Ads do not appear between levels, on the win screen, or anywhere else on their own. They appear only when you press the “watch an ad” button in the shop to earn coins.',
           'When you press it, Google AdMob receives your device advertising identifier and an approximate, country-level location so it can select an ad. This is handled by Google under Google’s own terms; we receive nothing from it except a confirmation that the ad was watched, which is what adds coins to your balance.',
           'You can reset or delete your advertising identifier at any time in your Android settings, under Privacy → Ads.',
         ],
@@ -588,7 +607,7 @@ export const en: SiteContent = {
       {
         heading: 'Purchases',
         paragraphs: [
-          'Coins can be bought with real money in Soʻzbogʻ. This is entirely optional — the game can be completed without spending anything.',
+          'Coins can be bought with real money in Soʻzbogʻ and Wordio. This is entirely optional: the games can be completed without spending anything.',
           'Payments are handled end to end by Google Play. Card numbers, names and billing addresses go to Google, never to us. We do not see, store or transmit any payment information; we only receive a confirmation that a purchase completed.',
           'Purchase history lives in your Google Play account rather than in the app.',
         ],
@@ -612,7 +631,7 @@ export const en: SiteContent = {
       {
         heading: 'Third parties',
         paragraphs: [
-          'Two Google services are involved in our Android apps: Google AdMob, for the optional rewarded ads described above, and Google Play Billing, for optional purchases. Both are governed by Google’s own privacy terms.',
+          'Google services are involved in our Android apps: Google AdMob for the optional rewarded ads, Google Play Billing for optional purchases, and Google Firebase (Analytics, Authentication and Cloud Firestore) for the gameplay statistics and optional cloud save described above. All of them are governed by Google’s own privacy terms.',
           'Our browser game loads the three.js graphics library from a public code network (cdnjs). That request reveals your IP address to that network, as any web request does; no other information is sent and we receive nothing from it.',
           'TASHKENT CITY can also be opened inside Telegram. When it is, the game keeps a copy of your progress in Telegram’s own cloud storage for your account, so it survives a change of device. It does not read your Telegram profile, and none of it reaches us. Opened in an ordinary browser, no such copy is made.',
         ],
@@ -620,7 +639,7 @@ export const en: SiteContent = {
       {
         heading: 'Your rights',
         paragraphs: [
-          'Data protection law gives people rights to access, correct and delete personal data held about them. Because we hold no personal data about you, there is nothing for us to produce, correct or erase — but if you believe otherwise, write to us and we will look into it properly.',
+          'Data protection law gives people the right to access, correct and delete personal data held about them. The only personal data we can hold about you is the name, email address and game progress linked to an optional Google sign-in. To see, correct or delete it, write to tolibjonfayz@gmail.com.',
         ],
       },
       {
@@ -767,7 +786,7 @@ export const en: SiteContent = {
       },
       {
         q: 'Do I need to create an account?',
-        a: 'No. None of our products has an account system, a sign-up or a login. You open them and use them.',
+        a: 'No. Every one of our products works without an account. In Soʻzbogʻ and Wordio you can sign in with Google to back up your progress, but it is always optional.',
       },
       {
         q: 'Which devices do they run on?',

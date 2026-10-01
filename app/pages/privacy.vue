@@ -22,7 +22,7 @@ useSchemaOrg([
     >
       <p class="mt-6 text-sm text-fg0">
         {{ content.legal.updated }}:
-        <time datetime="2026-08-25">{{ content.legal.updatedDate }}</time>
+        <time datetime="2026-10-01">{{ content.legal.privacyUpdatedDate }}</time>
       </p>
     </PageHero>
 

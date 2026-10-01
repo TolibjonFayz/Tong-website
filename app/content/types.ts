@@ -216,6 +216,8 @@ export interface SiteContent {
   legal: {
     updated: string
     updatedDate: string
+    /** Maxfiylik siyosati alohida yangilanadi — Terms sanasi bilan aralashmasin. */
+    privacyUpdatedDate: string
     tocHeading: string
   }
 

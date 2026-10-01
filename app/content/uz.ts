@@ -78,7 +78,7 @@ export const uz: SiteContent = {
     privacy: {
       title: 'Maxfiylik siyosati | TONG INC',
       description:
-        'TONG INC sayti, oʻyinlari va dasturlari maʼlumotni qanday boshqaradi: hisob yoʻq, roʻyxatdan oʻtish yoʻq, va reklama koʻrganingizda yoki xarid qilganingizda Google nimani koʻrishi ochiq yozilgan.',
+        'TONG INC sayti, oʻyinlari va dasturlari maʼlumotni qanday boshqaradi: majburiy hisob yoʻq, hech narsa sotilmaydi, va qurilmangizdan nima chiqishi hamda nima uchunligi ochiq yozilgan.',
     },
     terms: {
       title: 'Foydalanish shartlari | TONG INC',
@@ -123,7 +123,7 @@ export const uz: SiteContent = {
           icon: 'shield',
           title: 'Roʻyxatdan oʻtish degan narsa yoʻq',
           body:
-            'Hisob yoʻq, roʻyxatdan oʻtish yoʻq, email soʻralmaydi. Progressingiz qurilmangizda qoladi. Undan chiqadigan yagona narsa — Google oʻzingiz soʻragan reklamani koʻrsatishi yoki oʻzingiz qilgan xaridni rasmiylashtirishi uchun kerak boʻlgani.',
+            'Hisob shart emas, email soʻralmaydi. Progressingiz qurilmangizda qoladi — agar oʻzingiz uni Google bilan saqlab qoʻyishni tanlamasangiz. Bundan tashqari faqat Google oʻzingiz soʻragan reklama yoki qilgan xaridingiz uchun kerak boʻlgani va nomsiz oʻyin statistikasi tashqariga chiqadi.',
         },
         {
           icon: 'language',
@@ -311,7 +311,7 @@ export const uz: SiteContent = {
     detailsHeading: 'Maʼlumotlar',
     privacyHeading: 'Soʻzbogʻda maxfiylik',
     privacyBody:
-      'Soʻzbogʻ sizdan hech narsa soʻramaydi: ism, email, telefon raqami, joylashuv, kontakt, rasm — hech biri. Yaratadigan hisob yoʻq va biz oʻzimizdan hech qanday tahlil tizimi qoʻshmaymiz. Progressingiz telefoningizda yashaydi va ilova bilan birga oʻchadi. Google bilan ikkita narsa bogʻlanadi: ixtiyoriy “reklama koʻrish” tugmasini bossangiz, Google AdMob mos reklama tanlash uchun qurilmangizning reklama identifikatorini oladi; tanga sotib olsangiz, toʻlovni boshidan oxirigacha Google Play boshqaradi. Karta maʼlumotingizni biz hech qachon koʻrmaymiz, reklama identifikatorini esa Android sozlamalaridan istalgan vaqtda tozalash mumkin.',
+      'Soʻzbogʻ sizdan telefon raqami, joylashuv, kontakt yoki rasm soʻramaydi va uni hech qanday hisobsiz oʻynasa boʻladi. Progressingiz telefoningizda yashaydi. Google bilan bir necha narsa bogʻlanadi: ixtiyoriy “reklama koʻrish” tugmasini bossangiz, Google AdMob mos reklama tanlash uchun qurilmangizning reklama identifikatorini oladi; tanga sotib olsangiz, toʻlovni boshidan oxirigacha Google Play boshqaradi; nomsiz oʻyin statistikasi bosqichlarni muvozanatlashga yordam beradi; Google bilan kirishni tanlasangiz esa progressingiz saqlanib, yangi telefonda davom ettirasiz. Karta maʼlumotingizni biz hech qachon koʻrmaymiz, reklama identifikatorini esa Android sozlamalaridan istalgan vaqtda tozalash mumkin.',
   },
 
   tashkentCity: {
@@ -462,7 +462,7 @@ export const uz: SiteContent = {
         icon: 'shield',
         title: 'Maʼlumotingiz bizga kerak emas',
         body:
-          'Qonun talab qilgani uchun emas — shunday qilib loyihalaganimiz uchun. Siz haqingizda profil tuzmaymiz, oʻzimizdan tahlil tizimi qoʻshmaymiz va hisob talab qilmaymiz, chunki yaxshi narsa yasash uchun siz haqingizda hech narsa bilishimiz shart emas.',
+          'Qonun talab qilgani uchun emas — shunday qilib loyihalaganimiz uchun. Siz haqingizda profil tuzmaymiz va hisob talab qilmaymiz. Yigʻadiganimiz faqat oʻyinning oʻzi haqidagi nomsiz statistika — masalan, qaysi bosqich juda qiyin — chunki yaxshi narsa yasash uchun shuning oʻzi yetarli.',
       },
       {
         icon: 'offline',
@@ -526,6 +526,7 @@ export const uz: SiteContent = {
   legal: {
     updated: 'Oxirgi yangilanish',
     updatedDate: '2026-yil 25-avgust',
+    privacyUpdatedDate: '2026-yil 1-oktabr',
     tocHeading: 'Shu sahifada',
   },
 
@@ -537,8 +538,8 @@ export const uz: SiteContent = {
       {
         heading: 'Qisqasi',
         paragraphs: [
-          'Biz sizdan shaxsiy maʼlumot soʻramaymiz va uni yigʻmaymiz. Yaratadigan hisob yoʻq, oʻzimizdan tahlil tizimi qoʻshmaymiz va bizning tomonda siz haqingizda hech qanday profil yoʻq.',
-          'Google bilan ikkita narsa bogʻliq va ikkalasi ham sizning tanlovingiz: Soʻzbogʻdagi ixtiyoriy mukofotli reklama — faqat siz tugmani bosganingizda ishlaydi, va ilova ichidagi xaridlar — ularni boshidan oxirigacha Google Play boshqaradi. Quyida har birining nimani koʻrishi aniq yozilgan.',
+          'Biz sizdan telefon raqami yoki manzil soʻramaymiz va oʻyinlarimiz hech qanday hisobsiz ishlaydi. Progressingiz qurilmangizda turadi.',
+          'Qurilmangizdan tashqariga bir necha narsa chiqadi va bu sahifa har birini aniq tushuntiradi: ixtiyoriy mukofotli reklama va ilova ichidagi xaridlar (ikkalasini Google boshqaradi), soʻz oʻyinlarimizdagi nomsiz oʻyin statistikasi va progressni saqlab qoʻyadigan ixtiyoriy Google bilan kirish.',
         ],
       },
       {
@@ -549,13 +550,15 @@ export const uz: SiteContent = {
       },
       {
         heading: 'Nima yigʻilmaydi',
-        paragraphs: ['Ilovalarimiz quyidagilarni hech qachon soʻramaydi va yigʻmaydi:'],
+        paragraphs: [
+          'Ilovalarimiz quyidagilarni hech qachon soʻramaydi va yigʻmaydi:',
+        ],
         bullets: [
-          'Ismingiz, telefon raqamingiz yoki email manzilingiz',
-          'Joylashuvingiz',
+          'Telefon raqamingiz yoki pochta manzilingiz',
+          'Aniq joylashuvingiz',
           'Kontaktlaringiz, rasmlaringiz, fayllaringiz yoki mikrofoningiz',
-          'Hisob yoki kirish maʼlumotlari — umuman hisob tizimi yoʻq',
-          'Qanday oʻynashingiz haqidagi tahlil — oʻzimizdan analitika SDK qoʻshmaymiz (Google reklama xizmati quyida alohida yozilgan)',
+          'Boshqa ilova va saytlarda nima qilayotganingiz',
+          'Ismingiz va email manzilingiz — agar oʻzingiz Google bilan kirmasangiz (pastda yozilgan)',
         ],
       },
       {
@@ -571,16 +574,32 @@ export const uz: SiteContent = {
         ],
       },
       {
+        heading: 'Ixtiyoriy kirish va bulutda saqlash',
+        paragraphs: [
+          'Soʻzbogʻ va Wordio sozlamalarida Google hisobingiz bilan kirish mumkin — telefon almashtirsangiz ham progress yoʻqolmaydi. Bu ixtiyoriy: ikkala oʻyin ham kirishsiz toʻliq ishlaydi.',
+          'Kirganingizda Google Firebase Authentication Google hisobingizdagi ism, email manzil va hisob identifikatorini oladi, oʻyin progressingiz (bosqich, tanga, sozlamalar va kunlik ketma-ketlik) esa shu identifikator ostida Google Firebase Cloud Firestore’da saqlanadi. Bu nusxani faqat oʻzingizning hisobingiz oʻqiy va oʻzgartira oladi.',
+          'Bu maʼlumotdan faqat progressni sinxronlash uchun foydalanamiz. Uni hech qachon sotmaymiz, reklamachilarga bermaymiz va siz bilan bogʻlanish uchun ishlatmaymiz.',
+        ],
+      },
+      {
+        heading: 'Oʻyin statistikasi',
+        paragraphs: [
+          'Soʻzbogʻ va Wordio nomsiz oʻyin voqealarini Google Analytics for Firebase’ga yuboradi — qaysi bosqichlar juda qiyin yoki juda oson ekanini koʻrib, tuzatish uchun. Masalan: bosqich boshlandi yoki tugadi, qancha vaqt ketdi, yordam ishlatildi, doʻkondan narsa olindi.',
+          'Bu voqealarda ism, email yoki hisob IDsi yoʻq. Google Analytics ularni tasodifiy ilova identifikatoriga bogʻlaydi va IP manzilingizdan taxminiy, davlat darajasidagi joylashuvni aniqlashi mumkin.',
+        ],
+      },
+      {
         heading: 'Hammasini qanday oʻchirish mumkin',
         paragraphs: [
-          'Serverimizda hech narsa saqlanmagani uchun maʼlumotni oʻchirishga bizdan ruxsat soʻrash shart emas. Soʻzbogʻda: Sozlamalar → Boshqarish → Progressni tozalash. Saqlangan hamma narsa darhol oʻchadi.',
-          'Ilovani telefondan oʻchirish ham xuddi shunday natija beradi. Brauzer oʻyinimiz uchun esa oʻsha sahifaning brauzerdagi maʼlumotini tozalash yetarli. Boshqa hech qayerda nusxasi yoʻq.',
+          'Qurilmadagi progress: Soʻzbogʻ yoki Wordio’da sozlamalarni ochib progressni tozalang — telefondagi hamma narsa darhol oʻchadi. Ilovani oʻchirish ham xuddi shunday natija beradi. Brauzer oʻyinimiz uchun oʻsha sahifaning brauzerdagi maʼlumotini tozalash yetarli.',
+          'Kirish hisobi va bulutdagi nusxa: agar Google bilan kirgan boʻlsangiz, oʻsha Google hisobidan tolibjonfayz@gmail.com manziliga yozib, hisobingizni oʻchirishni soʻrang. Saqlangan progressingiz va kirish yozuvingizni 30 kun ichida oʻchiramiz va email orqali tasdiqlaymiz.',
+          'Oʻyin statistikasini Google Analytics saqlash muddati tugagach oʻzi avtomatik oʻchiradi.',
         ],
       },
       {
         heading: 'Reklama',
         paragraphs: [
-          'Reklama faqat Soʻzbogʻda bor, u ixtiyoriy va hech qachon oʻz-oʻzidan chiqmaydi. Reklama bosqichlar orasida ham, gʻalaba oynasida ham, boshqa hech qayerda ham oʻzi ochilmaydi. U faqat siz doʻkonda tanga ishlash uchun “reklama koʻrish” tugmasini bosganingizda koʻrsatiladi.',
+          'Reklama faqat Soʻzbogʻ va Wordio’da bor, u ixtiyoriy va hech qachon oʻz-oʻzidan chiqmaydi. Reklama bosqichlar orasida ham, gʻalaba oynasida ham, boshqa hech qayerda ham oʻzi ochilmaydi. U faqat siz doʻkonda tanga ishlash uchun “reklama koʻrish” tugmasini bosganingizda koʻrsatiladi.',
           'Tugmani bosganingizda Google AdMob qurilmangizning reklama identifikatorini va taxminiy, davlat darajasidagi joylashuvingizni oladi — mos reklama tanlash uchun. Buni Google oʻz shartlari asosida boshqaradi; biz undan faqat “reklama koʻrildi” degan tasdiqni olamiz.',
           'Reklama identifikatorini istalgan vaqtda Android sozlamalarida tiklash yoki oʻchirish mumkin: Maxfiylik → Reklamalar.',
         ],
@@ -588,7 +607,7 @@ export const uz: SiteContent = {
       {
         heading: 'Xaridlar',
         paragraphs: [
-          'Soʻzbogʻda tangani haqiqiy pulga sotib olish mumkin. Bu butunlay ixtiyoriy — oʻyinni hech narsa sarflamasdan tugatsa boʻladi.',
+          'Soʻzbogʻ va Wordio’da tangani haqiqiy pulga sotib olish mumkin. Bu butunlay ixtiyoriy — oʻyinlarni hech narsa sarflamasdan tugatsa boʻladi.',
           'Toʻlovni boshidan oxirigacha Google Play boshqaradi. Karta raqami, ism va toʻlov manzili Google’ga boradi, bizga emas. Biz hech qanday toʻlov maʼlumotini na koʻramiz, na saqlaymiz, na uzatamiz.',
           'Xarid tarixi ilovada emas, Google Play hisobingizda turadi.',
         ],
@@ -612,7 +631,7 @@ export const uz: SiteContent = {
       {
         heading: 'Uchinchi tomonlar',
         paragraphs: [
-          'Android ilovalarimizda Google’ning ikkita xizmati ishtirok etadi: ixtiyoriy mukofotli reklama uchun Google AdMob va ixtiyoriy xaridlar uchun Google Play Billing. Ikkalasi ham Google’ning oʻz maxfiylik shartlari asosida ishlaydi.',
+          'Android ilovalarimizda Google xizmatlari ishtirok etadi: ixtiyoriy mukofotli reklama uchun Google AdMob, ixtiyoriy xaridlar uchun Google Play Billing va yuqorida yozilgan oʻyin statistikasi hamda ixtiyoriy bulutda saqlash uchun Google Firebase (Analytics, Authentication va Cloud Firestore). Hammasi Google’ning oʻz maxfiylik shartlari asosida ishlaydi.',
           'Brauzer oʻyinimiz three.js grafika kutubxonasini ochiq kod tarmogʻidan (cdnjs) yuklaydi. Bu soʻrov, har qanday veb-soʻrov kabi, IP manzilingizni oʻsha tarmoqqa koʻrsatadi; boshqa hech qanday maʼlumot yuborilmaydi.',
           'TASHKENT CITY ni Telegram ichida ham ochish mumkin. Shunda oʻyin progressingiz nusxasini Telegramning oʻz bulut xotirasida, sizning hisobingizda saqlaydi — qurilma almashsa ham progress qoladi. U Telegram profilingizni oʻqimaydi va bu maʼlumot bizga kelmaydi. Oddiy brauzerda ochilsa, bunday nusxa umuman yasalmaydi.',
         ],
@@ -620,7 +639,7 @@ export const uz: SiteContent = {
       {
         heading: 'Sizning huquqlaringiz',
         paragraphs: [
-          'Maʼlumotlarni himoya qilish qonunchiligi odamlarga oʻzi haqidagi shaxsiy maʼlumotni koʻrish, tuzatish va oʻchirish huquqini beradi. Bizda siz haqingizda shaxsiy maʼlumot yoʻqligi uchun taqdim etadigan narsa ham yoʻq — lekin boshqacha deb hisoblasangiz, yozing, jiddiy koʻrib chiqamiz.',
+          'Maʼlumotlarni himoya qilish qonunchiligi odamlarga oʻzi haqidagi shaxsiy maʼlumotni koʻrish, tuzatish va oʻchirish huquqini beradi. Bizda siz haqingizda boʻlishi mumkin boʻlgan yagona shaxsiy maʼlumot — ixtiyoriy Google bilan kirishga bogʻlangan ism, email va oʻyin progressi. Uni koʻrish, tuzatish yoki oʻchirish uchun tolibjonfayz@gmail.com manziliga yozing.',
         ],
       },
       {
@@ -767,7 +786,7 @@ export const uz: SiteContent = {
       },
       {
         q: 'Roʻyxatdan oʻtish kerakmi?',
-        a: 'Yoʻq. Mahsulotlarimizning hech birida hisob tizimi, roʻyxatdan oʻtish yoki kirish yoʻq. Ochasiz va ishlatasiz.',
+        a: 'Yoʻq. Mahsulotlarimizning hammasi hisobsiz ishlaydi. Soʻzbogʻ va Wordio’da progressni saqlab qoʻyish uchun Google bilan kirish mumkin, lekin bu doim ixtiyoriy.',
       },
       {
         q: 'Qaysi qurilmalarda ishlaydi?',
