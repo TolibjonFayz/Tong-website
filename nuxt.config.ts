@@ -22,6 +22,10 @@ export default defineNuxtConfig({
     description:
       'TONG INC (TONG GAMES) is a game and app studio in Tashkent, Uzbekistan: the Soʻzbogʻ word puzzle on Google Play and the Bilim Manba knowledge platform.',
     defaultLocale: 'en',
+    // Cloudflare Pages `/news` ni `/news/` ga 308 bilan yo'naltiradi.
+    // Canonical va sitemap ham `/` bilan tugasa, Google yo'naltirilgan
+    // manzilni "asosiy" deb ko'rmaydi.
+    trailingSlash: true,
   },
 
   // --- Ikki til: ingliz `/`, o'zbek `/uz` ---------------------------------
