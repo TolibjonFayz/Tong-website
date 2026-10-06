@@ -20,7 +20,7 @@ export default defineNuxtConfig({
     url: SITE_URL,
     name: 'TONG INC',
     description:
-      'TONG INC is a mobile game and app studio in Tashkent, Uzbekistan, building original Android games under the TONG GAMES label.',
+      'TONG INC (TONG GAMES) is a game and app studio in Tashkent, Uzbekistan: the Soʻzbogʻ word puzzle on Google Play and the Bilim Manba knowledge platform.',
     defaultLocale: 'en',
   },
 

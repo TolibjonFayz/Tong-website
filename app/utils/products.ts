@@ -41,7 +41,8 @@ export const PRODUCTS: Product[] = [
   {
     slug: 'sozbog',
     kind: 'game',
-    status: 'testing',
+    // 2026-10: Google Play'da hammaga ochiq chiqdi (yopiq testdan o'tdi)
+    status: 'live',
     url: 'https://play.google.com/store/apps/details?id=uz.sozbog.sozbog',
     hasPage: true,
     shots: ['01_home', '02_game', '03_map', '04_shop'],

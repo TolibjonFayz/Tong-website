@@ -1,10 +1,13 @@
 <script setup lang="ts">
 import { productBySlug } from '~/utils/products'
+import { NEWS } from '~/content/news'
 
 const content = useSiteContent()
 const localePath = useLocalePath()
 
-const tashkentCity = productBySlug('tashkent-city')!
+const bilimManba = productBySlug('bilim-manba')!
+/** Bosh sahifada eng yangi ikkita maqola */
+const latest = NEWS.slice(0, 2)
 
 usePageSeo('home', { ogTitle: 'TONG INC' })
 </script>
@@ -124,11 +127,10 @@ usePageSeo('home', { ogTitle: 'TONG INC' })
               </h2>
               <span
                 class="inline-flex items-center gap-1.5 rounded-full border
-                       border-accent-soft/40 px-3 py-1 text-xs font-semibold
-                       text-accent-soft"
+                       border-ok/40 px-3 py-1 text-xs font-semibold text-ok"
               >
-                <span class="h-1.5 w-1.5 rounded-full bg-current" />
-                {{ content.status.testing }}
+                <span class="h-1.5 w-1.5 animate-pulse rounded-full bg-current" />
+                {{ content.status.live }}
               </span>
             </div>
 
@@ -184,63 +186,94 @@ usePageSeo('home', { ogTitle: 'TONG INC' })
       </div>
     </section>
 
-    <!-- ============ HOZIR OʻYNASH MUMKIN: TASHKENT CITY ============ -->
+    <!-- ============ VEB-PLATFORMA: BILIM MANBA ============ -->
     <section class="mx-auto max-w-6xl px-5 pt-6 sm:px-8">
       <div class="card-edge overflow-hidden rounded-3xl backdrop-blur-sm">
-        <div class="grid gap-8 p-7 sm:p-9 lg:grid-cols-[1fr_20rem] lg:items-center">
+        <div
+          class="grid gap-10 p-8 sm:p-12 lg:grid-cols-[1fr_24rem] lg:items-center"
+        >
           <div class="min-w-0">
             <p
               class="flex items-center gap-2 font-display text-xs font-bold
                      uppercase tracking-[0.18em] text-ok"
             >
               <span class="h-1.5 w-1.5 animate-pulse rounded-full bg-current" />
-              {{ content.home.alsoLive.eyebrow }}
+              {{ content.home.platform.eyebrow }}
             </p>
 
-            <h2 class="mt-3 text-2xl font-bold sm:text-3xl">
-              {{ content.home.alsoLive.heading }}
-            </h2>
+            <div class="mt-4 flex flex-wrap items-center gap-4">
+              <img
+                src="/images/bilim-manba-icon-256.webp"
+                alt=""
+                width="64"
+                height="64"
+                class="h-14 w-14 rounded-2xl border border-border sm:h-16 sm:w-16"
+                loading="lazy"
+                decoding="async"
+              >
+              <h2 class="text-3xl font-bold sm:text-4xl">
+                {{ content.home.platform.heading }}
+              </h2>
+              <span
+                class="inline-flex items-center gap-1.5 rounded-full border
+                       border-ok/40 px-3 py-1 text-xs font-semibold text-ok"
+              >
+                <span class="h-1.5 w-1.5 animate-pulse rounded-full bg-current" />
+                {{ content.status.live }}
+              </span>
+            </div>
 
-            <p class="mt-4 max-w-xl text-sm leading-relaxed text-fg-muted">
-              {{ content.home.alsoLive.lead }}
+            <p class="mt-5 max-w-xl leading-relaxed text-fg-muted">
+              {{ content.home.platform.lead }}
             </p>
 
-            <div class="mt-6 flex flex-wrap items-center gap-4">
+            <ul class="mt-6 space-y-3">
+              <li
+                v-for="b in content.home.platform.bullets"
+                :key="b"
+                class="flex gap-3 text-sm leading-relaxed text-fg-body"
+              >
+                <AppIcon
+                  name="check"
+                  :size="17"
+                  class="mt-0.5 shrink-0 text-accent"
+                />
+                <span>{{ b }}</span>
+              </li>
+            </ul>
+
+            <div class="mt-8">
               <a
-                :href="tashkentCity.url"
+                :href="bilimManba.url"
                 target="_blank"
                 rel="noopener"
-                class="inline-flex items-center gap-2.5 rounded-xl border
-                       border-border-strong px-4 py-2.5 text-sm font-semibold
-                       text-fg-body transition-colors hover:border-accent"
+                class="group inline-flex items-center gap-2.5 rounded-xl2
+                       bg-dawn px-5 py-3 text-sm font-semibold text-on-accent
+                       shadow-dawn transition-transform duration-200
+                       hover:-translate-y-0.5"
               >
-                <AppIcon name="play" :size="14" />
-                {{ content.cta.openGame }}
+                <AppIcon name="book" :size="16" />
+                {{ content.cta.openSite }} — bilimmanba.uz
+                <AppIcon name="external" :size="15" />
               </a>
-
-              <NuxtLink
-                :to="localePath('/work/tashkent-city')"
-                class="group inline-flex items-center gap-2 text-sm
-                       font-semibold text-accent"
-              >
-                {{ content.cta.seeProduct }}
-                <AppIcon
-                  name="arrow"
-                  :size="15"
-                  class="transition-transform duration-200
-                         group-hover:translate-x-1"
-                />
-              </NuxtLink>
             </div>
           </div>
 
-          <div class="min-w-0">
+          <a
+            :href="bilimManba.url"
+            target="_blank"
+            rel="noopener"
+            class="block min-w-0 transition-transform duration-300
+                   hover:-translate-y-1"
+            tabindex="-1"
+            aria-hidden="true"
+          >
             <ShotImage
-              name="tashkent-city-3"
-              :alt="content.tashkentCity.shots[0]?.alt ?? ''"
-              sizes="(min-width: 1024px) 320px, 88vw"
+              name="bilim-manba-1"
+              :alt="content.home.platform.shotAlt"
+              sizes="(min-width: 1024px) 384px, 88vw"
             />
-          </div>
+          </a>
         </div>
       </div>
     </section>
@@ -274,6 +307,39 @@ usePageSeo('home', { ogTitle: 'TONG INC' })
             {{ item.body }}
           </p>
         </article>
+      </div>
+    </section>
+
+    <!-- ================= SOʻNGGI YANGILIKLAR ================= -->
+    <section v-if="latest.length" class="mx-auto max-w-6xl px-5 pb-24 sm:px-8">
+      <div class="flex flex-wrap items-end justify-between gap-4">
+        <div>
+          <p
+            class="font-display text-xs font-bold uppercase tracking-[0.18em]
+                   text-accent"
+          >
+            {{ content.home.latestNews.eyebrow }}
+          </p>
+          <h2 class="mt-3 text-3xl font-bold sm:text-4xl">
+            {{ content.home.latestNews.heading }}
+          </h2>
+        </div>
+        <NuxtLink
+          :to="localePath('/news')"
+          class="group inline-flex items-center gap-2 text-sm font-semibold
+                 text-accent"
+        >
+          {{ content.news.allNews }}
+          <AppIcon
+            name="arrow"
+            :size="15"
+            class="transition-transform duration-200 group-hover:translate-x-1"
+          />
+        </NuxtLink>
+      </div>
+
+      <div class="mt-10 grid gap-5 lg:grid-cols-2">
+        <NewsCard v-for="post in latest" :key="post.slug" :post="post" />
       </div>
     </section>
 

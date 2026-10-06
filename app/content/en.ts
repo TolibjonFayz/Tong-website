@@ -6,6 +6,7 @@ export const en: SiteContent = {
   nav: {
     home: 'Home',
     work: 'Work',
+    news: 'News',
     about: 'About',
     support: 'Support',
     contact: 'Contact',
@@ -17,7 +18,7 @@ export const en: SiteContent = {
 
   cta: {
     playStore: 'View on Google Play',
-    playStoreNote: 'Currently in closed testing',
+    playStoreNote: 'Free on Android',
     openGame: 'Play in your browser',
     openSite: 'Visit the site',
     seeProduct: 'Read more',
@@ -47,9 +48,9 @@ export const en: SiteContent = {
 
   meta: {
     home: {
-      title: 'TONG INC — Game & Software Studio in Tashkent',
+      title: 'TONG INC · TONG GAMES — Game & App Studio in Tashkent',
       description:
-        'TONG INC is an independent studio in Tashkent, Uzbekistan. We build mobile and browser games, business software and web products — from Soʻzbogʻ to TASHKENT CITY.',
+        'TONG INC (TONG GAMES) is an independent game and app studio in Tashkent, Uzbekistan — makers of the Soʻzbogʻ word puzzle and the Bilim Manba platform.',
     },
     work: {
       title: 'Our Work — Games & Software by TONG INC',
@@ -57,19 +58,24 @@ export const en: SiteContent = {
         'Everything TONG INC has built and is building: browser and mobile games, the Bilim Manba knowledge platform, and warehouse software for sellers. Made in Tashkent, Uzbekistan.',
     },
     sozbog: {
-      title: 'Soʻzbogʻ — Uzbek Word Puzzle Game | TONG INC',
+      title: 'Soʻzbogʻ — Uzbek Word Puzzle on Google Play | TONG GAMES',
       description:
-        'Soʻzbogʻ is a word puzzle in the Uzbek language: swipe letters to build words, fill the crossword, and learn what every word you find means. 2,363 words, 145 themes, fully offline.',
+        'Soʻzbogʻ is a free word puzzle in the Uzbek language, out now on Google Play: swipe letters, build words, fill the crossword. 2,363 words, 145 topics, works offline.',
     },
     tashkentCity: {
       title: 'TASHKENT CITY — Open-World Driving Game in the Browser',
       description:
         'Drive across a 5×5 km Tashkent rebuilt in your browser: Chorsu, Registon, the TV tower, Magic City. 23 cars, missions, races and a day/night cycle. Free, no install.',
     },
+    news: {
+      title: 'News — TONG GAMES & TONG INC Updates',
+      description:
+        'Game releases, updates and studio news from TONG INC and its TONG GAMES label in Tashkent: Soʻzbogʻ, Bilim Manba and what we are building next.',
+    },
     about: {
       title: 'About TONG INC — Independent Studio in Uzbekistan',
       description:
-        'TONG INC is a small independent studio founded by Sardor Ikhtiyorov in Tashkent, building games that work offline and never ask you to sign up, plus apps and web platforms such as Bilim Manba.',
+        'TONG INC is an independent studio in Tashkent founded by Tolibjon Fayzullayev with co-founder Sardor Ikhtiyorov: games under the TONG GAMES label, apps and the Bilim Manba platform.',
     },
     contact: {
       title: 'Contact TONG INC — Tashkent, Uzbekistan',
@@ -107,11 +113,11 @@ export const en: SiteContent = {
     titleLead: 'We build at',
     titleAccent: 'first light',
     lead:
-      '“Tong” is the Uzbek word for dawn — the moment right before the sun clears the horizon. We are a small studio in Tashkent making games, apps and web products with that same unhurried care.',
+      '“Tong” is the Uzbek word for dawn — the moment right before the sun clears the horizon. We are a small studio in Tashkent making games under the TONG GAMES label, plus apps and web products, with that same unhurried care.',
     stats: [
       { value: '5', label: 'Products built or building' },
       { value: '2,363', label: 'Uzbek words written by hand' },
-      { value: '25 km²', label: 'Of Tashkent rebuilt in 3D' },
+      { value: '70+', label: 'Articles in Uzbek on Bilim Manba' },
       { value: '0', label: 'Accounts you have to create' },
     ],
     craft: {
@@ -149,20 +155,30 @@ export const en: SiteContent = {
       eyebrow: 'Our main product',
       heading: 'Soʻzbogʻ',
       lead:
-        'A word puzzle in the Uzbek language. Swipe letters together to form a word, fill the crossword, and — the part we care most about — read what the word actually means the moment you find it.',
+        'A word puzzle in the Uzbek language, now out on Google Play. Swipe letters together to form a word, fill the crossword, and see which topic every word you find belongs to.',
       bullets: [
-        '1,300+ levels across 145 themed collections',
-        'Every word comes with its meaning, so you finish a level knowing something new',
+        '1,300+ levels built from 2,363 Uzbek words in 145 topics',
+        'Uzbek letters like oʻ, gʻ, sh and ch are single tiles, the way they should be',
         'A daily puzzle with a streak that grows the longer you keep coming back',
         'Bonus words: anything valid you find beyond the answer still pays out',
-        'Completely playable offline, with no account and no sign-up',
+        'Completely playable offline — Google sign-in is optional, only to back up progress',
       ],
     },
-    alsoLive: {
-      eyebrow: 'Playable right now',
-      heading: 'TASHKENT CITY',
+    platform: {
+      eyebrow: 'Our web platform',
+      heading: 'Bilim Manba',
       lead:
-        'While Soʻzbogʻ finishes testing, our open-world driving game is already live — a 5×5 km Tashkent you can drive through in a browser tab, with nothing to install.',
+        'bilimmanba.uz is TONG INC’s knowledge platform: articles written in Uzbek on science, history, film, sport and technology. It is live, free, and open to read without an account.',
+      bullets: [
+        '70+ articles across 11 topics, all in Uzbek',
+        'Stuck on a passage? Ask the built-in AI to explain it',
+        'Free to read with no sign-up — an account is only for comments and saved articles',
+      ],
+      shotAlt: 'The Bilim Manba home page with the headline “Bilim oling, rivojlaning” and buttons to browse articles',
+    },
+    latestNews: {
+      eyebrow: 'News',
+      heading: 'Latest from the studio',
     },
     closing: {
       heading: 'Working on something together?',
@@ -185,9 +201,9 @@ export const en: SiteContent = {
   products: {
     'sozbog': {
       name: 'Soʻzbogʻ',
-      tagline: 'An Uzbek word puzzle that teaches you as you play',
+      tagline: 'An Uzbek word puzzle, free on Google Play',
       blurb:
-        'Swipe letters together to form a word, fill the crossword, and read what the word actually means the moment you find it. 2,363 hand-checked Uzbek words across 145 themed collections, and it all works offline.',
+        'Swipe letters together to form a word and fill the crossword; every word you find shows the topic it belongs to. 2,363 hand-checked Uzbek words in 145 topics, 1,300+ levels, and it all works offline.',
       meta: [
         { label: 'Platform', value: 'Android' },
         { label: 'Language', value: 'Uzbek' },
@@ -239,12 +255,12 @@ export const en: SiteContent = {
   },
 
   sozbog: {
-    status: 'Closed testing',
+    status: 'Out now on Google Play',
     statusExplain:
-      'Soʻzbogʻ is currently in closed testing on Google Play, which means the store listing is only reachable by invited testers. It has not been publicly released yet. If you would like to join the test group, write to us and we will add you.',
+      'Soʻzbogʻ has left closed testing and is publicly available on Google Play. Anyone with an Android phone can install it for free.',
     intro: [
       'Soʻzbogʻ is a word puzzle in the Uzbek language. A wheel of letters sits at the bottom of the screen; you drag your finger from one letter to the next and a word forms above. Lift your finger and, if the word is real, it drops into the crossword grid.',
-      'That part is familiar. What makes Soʻzbogʻ different is what happens next: the meaning of the word appears. Not a dictionary definition dropped in from somewhere else, but a short, plain explanation written for the game. Finish a level about spices and you leave knowing what zira and murch actually are.',
+      'That part is familiar. What makes Soʻzbogʻ different is how closely it is built around the language. Every word you find shows the topic it belongs to, and levels are grouped by theme, so a level about fruit or spices leaves you with a small set of related words rather than a random handful.',
       'The whole dictionary — 2,363 words across 145 themed collections — was assembled and checked by hand. There is no automatically generated word list, because automatically generated word lists in Uzbek produce nonsense.',
     ],
     featuresHeading: 'What is in the game',
@@ -257,9 +273,9 @@ export const en: SiteContent = {
       },
       {
         icon: 'meaning',
-        title: 'The meaning of every word',
+        title: 'The topic of every word',
         body:
-          'The moment a word lands in the grid, its meaning appears. This is the reason the game exists — it is a puzzle you can hand to a child learning the language, or to an adult who wants their Uzbek back.',
+          'The moment a word lands in the grid, its topic appears — fruit, spices, the home. Topics come from how the dictionary was compiled, never invented afterwards. It is a puzzle you can hand to a child learning the language, or to an adult who wants their Uzbek back.',
       },
       {
         icon: 'calendar',
@@ -433,7 +449,7 @@ export const en: SiteContent = {
   about: {
     heading: 'A studio in Tashkent',
     lead:
-      'TONG INC is an independent studio based in Tashkent, Uzbekistan. We build games, business software and web products — our own, and sometimes other people’s.',
+      'TONG INC is an independent studio based in Tashkent, Uzbekistan, founded by Tolibjon Fayzullayev. We build games under the TONG GAMES label, plus business software and web products — our own, and sometimes other people’s.',
     story: [
       {
         heading: 'Why “TONG”',
@@ -458,11 +474,21 @@ export const en: SiteContent = {
         ],
       },
     ],
-    founderHeading: 'Founder',
-    founderName: 'Sardor Ikhtiyorov',
-    founderRole: 'Founder, TONG INC',
-    founderBio:
-      'Sardor founded TONG INC in Tashkent to build the games and tools he wanted to see made here. He works across design, development and the dictionary work behind Soʻzbogʻ — the 2,363 words in that game were assembled and checked entry by entry.',
+    teamHeading: 'The team',
+    team: [
+      {
+        name: 'Tolibjon Fayzullayev',
+        role: 'Founder',
+        bio:
+          'Tolibjon founded TONG INC in Tashkent to build the games and tools he wanted to see made here. He leads the studio’s products — from the Soʻzbogʻ word puzzle to the Bilim Manba knowledge platform.',
+      },
+      {
+        name: 'Sardor Ikhtiyorov',
+        role: 'Co-founder',
+        bio:
+          'Sardor co-founded TONG INC and works with Tolibjon on the studio’s games and products, from the first idea to the release.',
+      },
+    ],
     valuesHeading: 'What we hold to',
     values: [
       {
@@ -490,6 +516,21 @@ export const en: SiteContent = {
           'Handling oʻ, gʻ, sh and ch correctly took real work in the game engine. So did putting Chorsu where Chorsu is. It would have been easier to ignore both. Doing it properly is the whole point.',
       },
     ],
+  },
+
+  news: {
+    heading: 'News',
+    lead:
+      'Releases, updates and studio news from TONG INC and TONG GAMES. When a game comes out or gets a big update, this is where we write about it.',
+    readMore: 'Read more',
+    allNews: 'All news',
+    publishedOn: 'Published',
+    by: 'By',
+    empty: 'No news yet — check back soon.',
+    tags: { release: 'Release', update: 'Update', studio: 'Studio' },
+    getGame: 'Get it on Google Play',
+    followHeading: 'Follow TONG GAMES',
+    followBody: 'Short videos, level teasers and release news — on TikTok and Instagram.',
   },
 
   contact: {
@@ -532,7 +573,7 @@ export const en: SiteContent = {
 
   legal: {
     updated: 'Last updated',
-    updatedDate: 'August 25, 2026',
+    updatedDate: 'October 6, 2026',
     privacyUpdatedDate: 'October 1, 2026',
     tocHeading: 'On this page',
   },
@@ -773,7 +814,7 @@ export const en: SiteContent = {
       {
         heading: 'Testing releases and availability',
         paragraphs: [
-          'Some of our applications, including Soʻzbogʻ at the time of writing, are distributed through closed testing on Google Play. Testing releases are provided as they are, may contain defects, and may change or be withdrawn without notice. Progress made during a testing period may not carry over to a public release.',
+          'Some of our applications may be distributed through closed testing on Google Play before their public release. Testing releases are provided as they are, may contain defects, and may change or be withdrawn without notice. Progress made during a testing period may not carry over to a public release.',
           'Products described on this site as “in development” are not released, may change completely, and may never be released at all. Nothing on this page is a promise that they will be.',
           'We do not guarantee that our applications or this website will be available without interruption, or that they will remain compatible with every device or browser version.',
         ],
@@ -850,15 +891,15 @@ export const en: SiteContent = {
       },
       {
         q: 'Do I need to create an account?',
-        a: 'No. Every one of our products works without an account. In Soʻzbogʻ and Wordio you can sign in with Google to back up your progress, but it is always optional.',
+        a: 'No. Our games work without an account. In Soʻzbogʻ and Wordio you can sign in with Google to back up your progress, but it is always optional. On Bilim Manba anyone can read every article; an account is only for comments and saved articles.',
       },
       {
         q: 'Which devices do they run on?',
         a: 'Soʻzbogʻ is an Android game distributed through Google Play; there is no iOS version at the moment. TASHKENT CITY runs in any modern browser on a laptop or a phone.',
       },
       {
-        q: 'Why can I not find Soʻzbogʻ on Google Play?',
-        a: 'The game is currently in closed testing, which means the Play Store listing is only visible to invited testers. It has not been publicly released yet. Write to us if you would like to join the test group.',
+        q: 'Where can I download Soʻzbogʻ?',
+        a: 'On Google Play — search for “Soʻzbogʻ” or “Sozbog”, or use the Google Play button on this site. It is free and runs on Android phones.',
       },
       {
         q: 'TASHKENT CITY runs slowly on my device. What can I do?',
@@ -866,11 +907,11 @@ export const en: SiteContent = {
       },
       {
         q: 'Where is my progress saved, and what happens if I change devices?',
-        a: 'In Soʻzbogʻ progress is saved on your device only — nothing goes to a server, which is exactly why we never ask for an account. TASHKENT CITY behaves the same way in an ordinary browser. The one exception: open TASHKENT CITY inside Telegram and it also keeps a copy in your Telegram cloud storage, so that progress does survive a change of device. Otherwise, uninstalling the app, clearing browser data or switching devices means starting fresh.',
+        a: 'In Soʻzbogʻ progress is saved on your phone. If you sign in with Google in Settings (optional), a copy is also kept in the cloud, so you can continue on a new phone. TASHKENT CITY saves progress in your browser; opened inside Telegram, it also keeps a copy in your Telegram cloud storage. Without either of those, uninstalling the app, clearing browser data or switching devices means starting fresh.',
       },
       {
         q: 'How do I delete my data?',
-        a: 'In Soʻzbogʻ: Settings → Manage → Clear progress. Uninstalling the app does the same. For TASHKENT CITY, clear your browser’s site data for the game page. There is no copy anywhere else.',
+        a: 'In Soʻzbogʻ: Settings → Manage → Clear progress; uninstalling the app does the same. If you signed in with Google, also delete your account in Settings → Account — the Delete account page at the bottom of this site explains how. For TASHKENT CITY, clear your browser’s site data for the game page.',
       },
       {
         q: 'I bought coins and they did not arrive.',
@@ -881,7 +922,7 @@ export const en: SiteContent = {
         a: 'Refunds are handled by Google Play, not by us, so requests need to go through your Google Play account or Google Play support. If Google declines and you think something has genuinely gone wrong, write to us anyway and we will look at it.',
       },
       {
-        q: 'I found a word that is missing, or a meaning that is wrong.',
+        q: 'I found a word that is missing, or one in the wrong topic.',
         a: 'Please tell us — this is genuinely useful. The dictionary was compiled by hand, so mistakes are ours and we want to fix them. Send the word and the level it appeared in.',
       },
       {

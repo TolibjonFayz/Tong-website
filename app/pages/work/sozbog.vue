@@ -9,7 +9,7 @@ const sb = computed(() => content.value.sozbog)
 
 usePageSeo('sozbog', {
   ogTitle: SOZBOG.name,
-  label: content.value.status.testing,
+  label: content.value.status.live,
 })
 
 /**
@@ -19,8 +19,9 @@ usePageSeo('sozbog', {
  * o'yinlarni VideoGame sifatida tushunadi, ilova do'koni ma'lumotini
  * esa SoftwareApplication'dan oladi.
  *
- * ⚠️ aggregateRating ATAYLAB yo'q — o'yin yopiq testda, haqiqiy reyting
- * yo'q. Bo'lmagan reytingni yozish Google qoidalarini buzadi.
+ * ⚠️ aggregateRating ATAYLAB yo'q — Play'da hali haqiqiy reyting yo'q.
+ * Bo'lmagan reytingni yozish Google qoidalarini buzadi. Reyting paydo
+ * bo'lsa, faqat Play'dagi haqiqiy raqamni yoz.
  */
 useSchemaOrg([
   defineBreadcrumb({
@@ -46,13 +47,13 @@ useSchemaOrg([
     'playMode': 'SinglePlayer',
     'inLanguage': 'uz',
     'contentRating': 'Everyone',
-    'author': { '@type': 'Organization', 'name': SITE.company },
-    'publisher': { '@type': 'Organization', 'name': SITE.company },
+    'author': { '@type': 'Organization', 'name': SITE.company, 'alternateName': SITE.brand },
+    'publisher': { '@type': 'Organization', 'name': SITE.company, 'alternateName': SITE.brand },
     'offers': {
       '@type': 'Offer',
       'price': '0',
       'priceCurrency': 'USD',
-      'availability': 'https://schema.org/PreOrder',
+      'availability': 'https://schema.org/InStock',
     },
     'privacyPolicy': SOZBOG.privacyUrl,
   },
@@ -97,16 +98,15 @@ useSchemaOrg([
         </div>
       </div>
 
-      <!-- Yopiq test haqida ochiq ogohlantirish -->
+      <!-- Holat: Google Play'da chiqdi -->
       <aside
-        class="mt-9 flex gap-4 rounded-3xl border border-accent-soft/35
-               bg-accent-soft/10 p-6"
+        class="mt-9 flex gap-4 rounded-3xl border border-ok/35 bg-ok/10 p-6"
       >
-        <span class="mt-0.5 shrink-0 text-accent-soft">
-          <AppIcon name="clock" :size="20" />
+        <span class="mt-0.5 shrink-0 text-ok">
+          <AppIcon name="check" :size="20" />
         </span>
         <div>
-          <p class="font-semibold text-accent-soft">
+          <p class="font-semibold text-ok">
             {{ sb.status }}
           </p>
           <p class="mt-2 text-sm leading-relaxed text-fg-body">

@@ -15,6 +15,7 @@ watch(() => route.fullPath, () => { open.value = false })
 const links = computed(() => [
   { to: localePath('/'), label: content.value.nav.home },
   { to: localePath('/work'), label: content.value.nav.work },
+  { to: localePath('/news'), label: content.value.nav.news },
   { to: localePath('/about'), label: content.value.nav.about },
   { to: localePath('/support'), label: content.value.nav.support },
   { to: localePath('/contact'), label: content.value.nav.contact },

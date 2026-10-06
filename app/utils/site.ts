@@ -6,7 +6,16 @@
 export const SITE = {
   company: 'TONG INC',
   brand: 'TONG GAMES',
-  founder: 'Sardor Ikhtiyorov',
+  founder: 'Tolibjon Fayzullayev',
+  coFounder: 'Sardor Ikhtiyorov',
+  /**
+   * Jamoa — "Biz haqimizda" sahifasi va JSON-LD shu ro'yxatdan oladi.
+   * Lavozim va bio matni tarjima qilinadi: `about.team` (shu tartibda).
+   */
+  team: [
+    { name: 'Tolibjon Fayzullayev', initials: 'TF' },
+    { name: 'Sardor Ikhtiyorov', initials: 'SI' },
+  ],
   email: 'tolibjonfayz@gmail.com',
   telegram: 'tolibjon_fayz',
   telegramUrl: 'https://t.me/tolibjon_fayz',
@@ -15,6 +24,12 @@ export const SITE = {
   country: 'Uzbekistan',
   countryCode: 'UZ',
   region: 'Tashkent',
+  /** Studiyaning rasmiy sahifalari — Google buni "bitta brend" deb bog'laydi */
+  social: {
+    tiktok: 'https://www.tiktok.com/@tong.games',
+    instagram: 'https://www.instagram.com/tong.games/',
+    googlePlay: 'https://play.google.com/store/apps/developer?id=Tong+Inc.',
+  },
 } as const
 
 export const SOZBOG = {

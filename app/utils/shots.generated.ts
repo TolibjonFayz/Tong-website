@@ -14,6 +14,7 @@ export const SHOTS: Record<string, ShotMeta> = {
   '02_game': { widths: [360, 720], w: 720, h: 1592 },
   '03_map': { widths: [360, 720], w: 720, h: 1592 },
   '04_shop': { widths: [360, 720], w: 720, h: 1592 },
+  'bilim-manba-1': { widths: [640, 1280], w: 1280, h: 800 },
   'block-combo-1': { widths: [360, 720], w: 720, h: 1599 },
   'block-combo-2': { widths: [360, 720], w: 720, h: 1599 },
   'block-combo-3': { widths: [360, 720], w: 720, h: 1599 },

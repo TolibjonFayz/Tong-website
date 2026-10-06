@@ -16,10 +16,8 @@ useSchemaOrg([
     'url': '/',
     'logo': '/icon-512.png',
     'email': SITE.email,
-    'founder': {
-      '@type': 'Person',
-      'name': SITE.founder,
-    },
+    'founder': SITE.team.map(m => ({ '@type': 'Person', 'name': m.name })),
+    'brand': { '@type': 'Brand', 'name': SITE.brand },
     'address': {
       '@type': 'PostalAddress',
       'addressLocality': SITE.city,
@@ -27,12 +25,21 @@ useSchemaOrg([
       'addressCountry': SITE.countryCode,
     },
     'description':
-      'Independent mobile game and app studio in Tashkent, Uzbekistan, publishing Android games under the TONG GAMES label.',
-    'sameAs': [SOZBOG.playUrl],
+      'Independent game and app studio in Tashkent, Uzbekistan, founded by Tolibjon Fayzullayev. Publishes Android games under the TONG GAMES label (Soʻzbogʻ) and runs the Bilim Manba knowledge platform.',
+    // Rasmiy sahifalar — Google shular orqali "TONG GAMES" so'rovini
+    // shu saytga bog'laydi.
+    'sameAs': [
+      SITE.social.googlePlay,
+      SITE.social.tiktok,
+      SITE.social.instagram,
+      SOZBOG.playUrl,
+      'https://bilimmanba.uz',
+    ],
   }),
   defineWebSite({
     name: SITE.company,
-    inLanguage: locale.value === 'uz' ? 'uz-UZ' : 'en-US',
+    alternateName: SITE.brand,
+    inLanguage: ({ en: 'en-US', uz: 'uz-UZ', ru: 'ru-RU' } as Record<string, string>)[locale.value] ?? 'en-US',
   }),
   defineWebPage(),
 ])

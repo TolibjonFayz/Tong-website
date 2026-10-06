@@ -52,6 +52,7 @@ export interface SiteContent {
   nav: {
     home: string
     work: string
+    news: string
     about: string
     support: string
     contact: string
@@ -98,6 +99,7 @@ export interface SiteContent {
     work: PageMeta
     sozbog: PageMeta
     tashkentCity: PageMeta
+    news: PageMeta
     about: PageMeta
     contact: PageMeta
     privacy: PageMeta
@@ -124,11 +126,18 @@ export interface SiteContent {
       lead: string
       bullets: string[]
     }
-    /** Asosiy mahsulotdan keyingi kichik blok — hozir o'ynash mumkin bo'lgani */
-    alsoLive: {
+    /** Asosiy mahsulotdan keyingi blok — veb-platformamiz Bilim Manba */
+    platform: {
       eyebrow: string
       heading: string
       lead: string
+      bullets: string[]
+      shotAlt: string
+    }
+    /** Bosh sahifadagi "so'nggi yangiliklar" bloki */
+    latestNews: {
+      eyebrow: string
+      heading: string
     }
     closing: {
       heading: string
@@ -183,12 +192,30 @@ export interface SiteContent {
     heading: string
     lead: string
     story: Section[]
-    founderHeading: string
-    founderName: string
-    founderRole: string
-    founderBio: string
+    teamHeading: string
+    /**
+     * Tartib `utils/site.ts` dagi SITE.team bilan bir xil. Ism shu yerda
+     * ham bor, chunki rus tilida kirillcha yoziladi.
+     */
+    team: { name: string, role: string, bio: string }[]
     valuesHeading: string
     values: Feature[]
+  }
+
+  /** Yangiliklar sahifasining umumiy matni (maqolalarning o'zi `content/news/` da) */
+  news: {
+    heading: string
+    lead: string
+    readMore: string
+    allNews: string
+    publishedOn: string
+    by: string
+    empty: string
+    /** Maqola turi yorlig'i — kalit `content/news/index.ts` dagi `tag` */
+    tags: { release: string, update: string, studio: string }
+    getGame: string
+    followHeading: string
+    followBody: string
   }
 
   contact: {

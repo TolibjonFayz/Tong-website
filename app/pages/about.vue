@@ -13,12 +13,13 @@ useSchemaOrg([
       { name: content.value.nav.about, item: localePath('/about') },
     ],
   }),
-  definePerson({
-    name: SITE.founder,
-    jobTitle: content.value.about.founderRole,
+  // Jamoa a'zolari — Google ularni TONG INC bilan bog'laydi
+  ...SITE.team.map((m, i) => definePerson({
+    name: m.name,
+    jobTitle: `${content.value.about.team[i]?.role}, ${SITE.company}`,
     worksFor: { '@type': 'Organization', name: SITE.company },
-    description: content.value.about.founderBio,
-  }),
+    description: content.value.about.team[i]?.bio,
+  })),
 ])
 </script>
 
@@ -52,37 +53,43 @@ useSchemaOrg([
       </div>
     </section>
 
-    <!-- ================= ASOSCHI ================= -->
+    <!-- ================= JAMOA ================= -->
     <section class="mx-auto max-w-6xl px-5 pb-16 sm:px-8">
-      <div class="card-edge rounded-3xl p-8 backdrop-blur-sm sm:p-12">
-        <p
-          class="font-display text-xs font-bold uppercase tracking-[0.18em]
-                 text-accent"
+      <h2
+        class="font-display text-xs font-bold uppercase tracking-[0.18em]
+               text-accent"
+      >
+        {{ content.about.teamHeading }}
+      </h2>
+
+      <div class="mt-6 grid gap-5 lg:grid-cols-2">
+        <article
+          v-for="(m, i) in content.about.team"
+          :key="m.name"
+          class="card-edge rounded-3xl p-8 backdrop-blur-sm sm:p-10"
         >
-          {{ content.about.founderHeading }}
-        </p>
-
-        <div class="mt-6 flex flex-wrap items-center gap-5">
-          <!-- Asoschining surati yo'q, shuning uchun bosh harflar -->
-          <span
-            class="flex h-16 w-16 shrink-0 items-center justify-center
-                   rounded-2xl bg-dawn font-display text-2xl font-bold
-                   text-on-accent"
-            aria-hidden="true"
-          >SI</span>
-          <div>
-            <h2 class="text-2xl font-bold">
-              {{ content.about.founderName }}
-            </h2>
-            <p class="mt-1 text-sm text-fg0">
-              {{ content.about.founderRole }}
-            </p>
+          <div class="flex flex-wrap items-center gap-5">
+            <!-- Surat yo'q, shuning uchun bosh harflar -->
+            <span
+              class="flex h-16 w-16 shrink-0 items-center justify-center
+                     rounded-2xl bg-dawn font-display text-2xl font-bold
+                     text-on-accent"
+              aria-hidden="true"
+            >{{ SITE.team[i]?.initials }}</span>
+            <div>
+              <h3 class="text-2xl font-bold">
+                {{ m.name }}
+              </h3>
+              <p class="mt-1 text-sm font-semibold text-accent">
+                {{ m.role }}, {{ SITE.company }}
+              </p>
+            </div>
           </div>
-        </div>
 
-        <p class="mt-7 max-w-2xl leading-relaxed text-fg-muted">
-          {{ content.about.founderBio }}
-        </p>
+          <p class="mt-6 leading-relaxed text-fg-muted">
+            {{ m.bio }}
+          </p>
+        </article>
       </div>
     </section>
 

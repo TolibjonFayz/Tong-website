@@ -6,6 +6,7 @@ export const uz: SiteContent = {
   nav: {
     home: 'Bosh sahifa',
     work: 'Ishlarimiz',
+    news: 'Yangiliklar',
     about: 'Biz haqimizda',
     support: 'Yordam',
     contact: 'Aloqa',
@@ -17,7 +18,7 @@ export const uz: SiteContent = {
 
   cta: {
     playStore: 'Google Play’da koʻrish',
-    playStoreNote: 'Hozircha yopiq testda',
+    playStoreNote: 'Android uchun bepul',
     openGame: 'Brauzerda oʻynash',
     openSite: 'Saytni ochish',
     seeProduct: 'Batafsil',
@@ -47,9 +48,9 @@ export const uz: SiteContent = {
 
   meta: {
     home: {
-      title: 'TONG INC — Toshkentdagi oʻyin va dastur studiyasi',
+      title: 'TONG INC · TONG GAMES — Toshkentdagi oʻyin va dastur studiyasi',
       description:
-        'TONG INC — Toshkentdagi mustaqil studiya. Mobil va brauzer oʻyinlari, biznes dasturlari va veb-mahsulotlar yaratamiz: Soʻzbogʻdan TASHKENT CITY gacha.',
+        'TONG INC (TONG GAMES) — Toshkentdagi mustaqil oʻyin va dastur studiyasi. Soʻzbogʻ soʻz oʻyini va Bilim Manba platformasini yaratganmiz.',
     },
     work: {
       title: 'Ishlarimiz — TONG INC oʻyinlari va dasturlari',
@@ -57,19 +58,24 @@ export const uz: SiteContent = {
         'TONG INC yaratgan va yaratayotgan hamma narsa: brauzer va mobil oʻyinlar, Bilim Manba bilim platformasi, sotuvchilar uchun ombor dasturi. Toshkentda yasalgan.',
     },
     sozbog: {
-      title: 'Soʻzbogʻ — oʻzbekcha soʻz jumbogʻi | TONG INC',
+      title: 'Soʻzbogʻ — oʻzbekcha soʻz oʻyini, Google Play’da | TONG GAMES',
       description:
-        'Soʻzbogʻ — oʻzbek tilidagi soʻz jumbogʻi. Harflarni bogʻlab soʻz yasang, krossvordni toʻldiring va har bir topilgan soʻzning maʼnosini bilib oling. 2 363 soʻz, 145 mavzu, internetsiz ishlaydi.',
+        'Soʻzbogʻ — oʻzbek tilidagi bepul soʻz jumbogʻi, Google Play’da chiqdi: harflarni bogʻlab soʻz yasang, krossvordni toʻldiring. 2 363 soʻz, 145 mavzu, internetsiz.',
     },
     tashkentCity: {
       title: 'TASHKENT CITY — brauzerdagi ochiq dunyo oʻyini',
       description:
         'Brauzerda qayta qurilgan 5×5 km Toshkent boʻylab haydang: Chorsu, Registon, Teleminora, Magic City. 23 mashina, missiyalar, poygalar va kun/tun sikli. Bepul, oʻrnatish shart emas.',
     },
+    news: {
+      title: 'Yangiliklar — TONG GAMES va TONG INC',
+      description:
+        'TONG INC va uning TONG GAMES yorligʻidan yangi oʻyinlar, yangilanishlar va studiya yangiliklari: Soʻzbogʻ, Bilim Manba va keyin nima yasayotganimiz.',
+    },
     about: {
       title: 'TONG INC haqida — Oʻzbekistondagi mustaqil studiya',
       description:
-        'TONG INC — Sardor Ikhtiyorov Toshkentda tashkil qilgan kichik mustaqil studiya. Internetsiz ishlaydigan va roʻyxatdan oʻtishni soʻramaydigan oʻyinlar, dasturlar va Bilim Manba kabi veb-platformalar yaratamiz.',
+        'TONG INC — Tolibjon Fayzullayev hammuassis Sardor Ikhtiyorov bilan Toshkentda tashkil qilgan mustaqil studiya: TONG GAMES oʻyinlari, dasturlar va Bilim Manba platformasi.',
     },
     contact: {
       title: 'TONG INC bilan aloqa — Toshkent, Oʻzbekiston',
@@ -107,11 +113,11 @@ export const uz: SiteContent = {
     titleLead: 'Biz',
     titleAccent: 'tong bilan boshlaymiz',
     lead:
-      '“Tong” — quyosh ufqdan chiqishidan oldingi payt. Osmonda rang bor, lekin kun hali boshlanmagan. Biz Toshkentdagi kichik studiyamiz: oʻyin, dastur va veb-mahsulotlarni ana shunday shoshmasdan yasaymiz.',
+      '“Tong” — quyosh ufqdan chiqishidan oldingi payt. Osmonda rang bor, lekin kun hali boshlanmagan. Biz Toshkentdagi kichik studiyamiz: TONG GAMES nomi ostida oʻyinlar, yana dastur va veb-mahsulotlarni ana shunday shoshmasdan yasaymiz.',
     stats: [
       { value: '5', label: 'Yasalgan va yasalayotgan mahsulot' },
       { value: '2 363', label: 'Qoʻlda yozilgan oʻzbekcha soʻz' },
-      { value: '25 km²', label: '3D da qayta qurilgan Toshkent' },
+      { value: '70+', label: 'Bilim Manba’dagi oʻzbekcha maqola' },
       { value: '0', label: 'Yaratishingiz kerak boʻlgan hisob' },
     ],
     craft: {
@@ -149,20 +155,30 @@ export const uz: SiteContent = {
       eyebrow: 'Asosiy mahsulotimiz',
       heading: 'Soʻzbogʻ',
       lead:
-        'Oʻzbek tilidagi soʻz jumbogʻi. Harflarni bir-biriga bogʻlab soʻz yasaysiz, krossvordni toʻldirasiz va — biz uchun eng muhimi — soʻzni topgan zahotingiz uning maʼnosini oʻqiysiz.',
+        'Oʻzbek tilidagi soʻz jumbogʻi — endi Google Play’da. Harflarni bir-biriga bogʻlab soʻz yasaysiz, krossvordni toʻldirasiz va topgan har bir soʻzingiz qaysi mavzudan ekanini koʻrasiz.',
       bullets: [
-        '145 ta mavzuli boʻlimda 1 300 dan ortiq bosqich',
-        'Har soʻz maʼnosi bilan keladi — bosqichni tugatib, bir narsa bilib chiqasiz',
+        '145 mavzudagi 2 363 oʻzbekcha soʻzdan 1 300 dan ortiq bosqich',
+        'Oʻ, gʻ, sh, ch kabi harflar bitta harf boʻlib turadi — xuddi boʻlishi kerakdek',
         'Kunlik jumboq va uzoq oʻynagan sari oʻsib boradigan ketma-ketlik',
         'Bonus soʻzlar: javobdan tashqari topgan har bir haqiqiy soʻz ham tanga beradi',
-        'Internetsiz toʻliq ishlaydi, hisob ham, roʻyxatdan oʻtish ham shart emas',
+        'Internetsiz toʻliq ishlaydi — Google bilan kirish ixtiyoriy, faqat progressni saqlash uchun',
       ],
     },
-    alsoLive: {
-      eyebrow: 'Hozir oʻynash mumkin',
-      heading: 'TASHKENT CITY',
+    platform: {
+      eyebrow: 'Veb-platformamiz',
+      heading: 'Bilim Manba',
       lead:
-        'Soʻzbogʻ test bosqichini tugatayotgan payt, erkin haydash oʻyinimiz allaqachon ochiq — brauzer oynasida haydab yuradigan 5×5 km Toshkent, oʻrnatish shart emas.',
+        'bilimmanba.uz — TONG INC’ning bilim platformasi: fan, tarix, kino, sport va texnologiya haqida oʻzbek tilida yozilgan maqolalar. Sayt ishlab turibdi, bepul va maqolalarni hisobsiz oʻqish mumkin.',
+      bullets: [
+        '11 ta yoʻnalishda 70 dan ortiq maqola — hammasi oʻzbek tilida',
+        'Tushunarsiz joy boʻlsa, sunʼiy intellektdan tushuntirib berishni soʻrang',
+        'Oʻqish bepul va roʻyxatdan oʻtmasdan — hisob faqat izoh qoldirish va maqolani saqlash uchun',
+      ],
+      shotAlt: 'Bilim Manba bosh sahifasi: “Bilim oling, rivojlaning” sarlavhasi va maqolalarni koʻrish tugmasi',
+    },
+    latestNews: {
+      eyebrow: 'Yangiliklar',
+      heading: 'Studiyadagi soʻnggi yangiliklar',
     },
     closing: {
       heading: 'Birga ishlaymizmi?',
@@ -185,9 +201,9 @@ export const uz: SiteContent = {
   products: {
     'sozbog': {
       name: 'Soʻzbogʻ',
-      tagline: 'Oʻynayotganda oʻrgatadigan oʻzbekcha soʻz jumbogʻi',
+      tagline: 'Oʻzbekcha soʻz jumbogʻi, Google Play’da bepul',
       blurb:
-        'Harflarni bogʻlab soʻz yasaysiz, krossvordni toʻldirasiz va soʻzni topgan zahotingiz uning maʼnosini oʻqiysiz. 145 mavzuli boʻlimda qoʻlda tekshirilgan 2 363 oʻzbekcha soʻz — hammasi internetsiz ishlaydi.',
+        'Harflarni bogʻlab soʻz yasaysiz va krossvordni toʻldirasiz; topgan har bir soʻzingiz qaysi mavzudan ekani koʻrsatiladi. 145 mavzudagi qoʻlda tekshirilgan 2 363 oʻzbekcha soʻz, 1 300+ bosqich — hammasi internetsiz ishlaydi.',
       meta: [
         { label: 'Platforma', value: 'Android' },
         { label: 'Til', value: 'Oʻzbekcha' },
@@ -239,12 +255,12 @@ export const uz: SiteContent = {
   },
 
   sozbog: {
-    status: 'Yopiq testda',
+    status: 'Google Play’da chiqdi',
     statusExplain:
-      'Soʻzbogʻ hozir Google Play’da yopiq testda (closed testing). Yaʼni doʻkondagi sahifa faqat taklif qilingan sinovchilarga koʻrinadi — oʻyin hali ommaviy chiqmagan. Sinov guruhiga qoʻshilmoqchi boʻlsangiz, bizga yozing, qoʻshib qoʻyamiz.',
+      'Soʻzbogʻ yopiq testdan chiqdi va endi Google Play’da hamma uchun ochiq. Android telefoni bor har kim uni bepul oʻrnatishi mumkin.',
     intro: [
       'Soʻzbogʻ — oʻzbek tilidagi soʻz jumbogʻi. Ekranning pastida harflar gʻildiragi turadi; barmogʻingizni bir harfdan ikkinchisiga suryapsiz va yuqorida soʻz hosil boʻladi. Barmoqni koʻtarsangiz, soʻz haqiqiy boʻlsa, krossvord katagiga tushadi.',
-      'Bu qismi tanish. Soʻzbogʻni boshqacha qiladigan narsa keyingisi: soʻzning maʼnosi chiqadi. Boshqa joydan koʻchirilgan lugʻat taʼrifi emas, aynan shu oʻyin uchun sodda qilib yozilgan izoh. Ziravorlar haqidagi bosqichni tugatsangiz, zira bilan murch nimaligini bilib chiqasiz.',
+      'Bu qismi tanish. Soʻzbogʻni boshqacha qiladigan narsa — u tilga qanchalik yaqin qurilgani. Topgan har bir soʻzingiz qaysi mavzuga tegishli ekani koʻrsatiladi, bosqichlar esa mavzu boʻyicha jamlangan. Shuning uchun mevalar yoki ziravorlar haqidagi bosqichdan tasodifiy soʻzlar emas, oʻzaro bogʻliq kichik soʻzlar toʻplami bilan chiqasiz.',
       'Butun lugʻat — 145 ta mavzuli boʻlimdagi 2 363 soʻz — qoʻlda yigʻilgan va qoʻlda tekshirilgan. Avtomatik yasalgan soʻz roʻyxati yoʻq, chunki oʻzbek tilida avtomatik roʻyxat behuda narsa chiqaradi.',
     ],
     featuresHeading: 'Oʻyinda nimalar bor',
@@ -257,9 +273,9 @@ export const uz: SiteContent = {
       },
       {
         icon: 'meaning',
-        title: 'Har soʻzning maʼnosi',
+        title: 'Har soʻzning mavzusi',
         body:
-          'Soʻz katakka tushgan zahoti maʼnosi chiqadi. Oʻyin aslida shuning uchun yaratilgan — uni til oʻrganayotgan bolaga ham, oʻzbekchasini qaytarmoqchi boʻlgan kattaga ham berish mumkin.',
+          'Soʻz katakka tushgan zahoti uning mavzusi chiqadi — mevalar, ziravorlar, uy-roʻzgʻor. Mavzular lugʻat qanday yigʻilganidan olingan, keyin oʻylab topilmagan. Oʻyinni til oʻrganayotgan bolaga ham, oʻzbekchasini qaytarmoqchi boʻlgan kattaga ham berish mumkin.',
       },
       {
         icon: 'calendar',
@@ -433,7 +449,7 @@ export const uz: SiteContent = {
   about: {
     heading: 'Toshkentdagi studiya',
     lead:
-      'TONG INC — Toshkent, Oʻzbekistonda joylashgan mustaqil studiya. Oʻyin, biznes dasturlari va veb-mahsulotlar yasaymiz — oʻzimiznikini ham, buyurtma ham.',
+      'TONG INC — Toshkent, Oʻzbekistonda joylashgan mustaqil studiya, asoschisi Tolibjon Fayzullayev. TONG GAMES nomi ostida oʻyinlar, yana biznes dasturlari va veb-mahsulotlar yasaymiz — oʻzimiznikini ham, buyurtma ham.',
     story: [
       {
         heading: 'Nega “TONG”',
@@ -458,11 +474,21 @@ export const uz: SiteContent = {
         ],
       },
     ],
-    founderHeading: 'Asoschi',
-    founderName: 'Sardor Ikhtiyorov',
-    founderRole: 'Asoschi, TONG INC',
-    founderBio:
-      'Sardor TONG INC ni Toshkentda tashkil qildi — oʻzi shu yerda yasalishini istagan oʻyin va dasturlarni yasash uchun. Dizayn, dasturlash va Soʻzbogʻ ortidagi lugʻat ishi — hammasida ishlaydi. Oʻsha oʻyindagi 2 363 soʻz bittalab yigʻilgan va bittalab tekshirilgan.',
+    teamHeading: 'Jamoa',
+    team: [
+      {
+        name: 'Tolibjon Fayzullayev',
+        role: 'Asoschi',
+        bio:
+          'Tolibjon TONG INC ni Toshkentda tashkil qildi — oʻzi shu yerda yasalishini istagan oʻyin va dasturlarni yasash uchun. Studiya mahsulotlariga u boshchilik qiladi: Soʻzbogʻ soʻz oʻyinidan Bilim Manba bilim platformasigacha.',
+      },
+      {
+        name: 'Sardor Ikhtiyorov',
+        role: 'Hammuassis',
+        bio:
+          'Sardor TONG INC ning hammuassisi. Tolibjon bilan birga studiyaning oʻyin va mahsulotlari ustida ishlaydi — birinchi gʻoyadan chiqishgacha.',
+      },
+    ],
     valuesHeading: 'Nimaga amal qilamiz',
     values: [
       {
@@ -490,6 +516,21 @@ export const uz: SiteContent = {
           'oʻ, gʻ, sh va ch ni toʻgʻri ishlatish oʻyin dvigatelida rostakam mehnat talab qildi. Chorsuni Chorsu turgan joyga qoʻyish ham. Ikkalasiga eʼtibor bermaslik osonroq boʻlardi.',
       },
     ],
+  },
+
+  news: {
+    heading: 'Yangiliklar',
+    lead:
+      'TONG INC va TONG GAMES’dan yangi chiqishlar, yangilanishlar va studiya yangiliklari. Oʻyin chiqsa yoki katta yangilanish boʻlsa, shu yerda yozamiz.',
+    readMore: 'Batafsil',
+    allNews: 'Barcha yangiliklar',
+    publishedOn: 'Chop etildi',
+    by: 'Muallif',
+    empty: 'Hozircha yangilik yoʻq — tez orada qayting.',
+    tags: { release: 'Yangi chiqish', update: 'Yangilanish', studio: 'Studiya' },
+    getGame: 'Google Play’dan yuklab olish',
+    followHeading: 'TONG GAMES’ni kuzating',
+    followBody: 'Qisqa videolar, bosqichlardan parchalar va yangi chiqishlar — TikTok va Instagram’da.',
   },
 
   contact: {
@@ -532,7 +573,7 @@ export const uz: SiteContent = {
 
   legal: {
     updated: 'Oxirgi yangilanish',
-    updatedDate: '2026-yil 25-avgust',
+    updatedDate: '2026-yil 6-oktabr',
     privacyUpdatedDate: '2026-yil 1-oktabr',
     tocHeading: 'Shu sahifada',
   },
@@ -773,7 +814,7 @@ export const uz: SiteContent = {
       {
         heading: 'Sinov versiyalari va mavjudlik',
         paragraphs: [
-          'Baʼzi ilovalarimiz, jumladan shu matn yozilgan paytdagi Soʻzbogʻ, Google Play’da yopiq test orqali tarqatiladi. Sinov versiyalari qanday boʻlsa shundayligicha beriladi, kamchiliklari boʻlishi mumkin va ogohlantirishsiz oʻzgarishi mumkin.',
+          'Baʼzi ilovalarimiz ommaviy chiqishdan oldin Google Play’da yopiq test orqali tarqatilishi mumkin. Sinov versiyalari qanday boʻlsa shundayligicha beriladi, kamchiliklari boʻlishi mumkin va ogohlantirishsiz oʻzgarishi mumkin.',
           'Shu saytda “ishlab chiqilmoqda” deb koʻrsatilgan mahsulotlar chiqmagan, butunlay oʻzgarishi mumkin va umuman chiqmasligi ham mumkin. Bu sahifadagi hech narsa ular chiqishiga vaʼda emas.',
           'Ilovalarimiz yoki shu sayt uzluksiz ishlashini, yoxud har bir qurilma va brauzer versiyasiga mos kelishda davom etishini kafolatlamaymiz.',
         ],
@@ -850,15 +891,15 @@ export const uz: SiteContent = {
       },
       {
         q: 'Roʻyxatdan oʻtish kerakmi?',
-        a: 'Yoʻq. Mahsulotlarimizning hammasi hisobsiz ishlaydi. Soʻzbogʻ va Wordio’da progressni saqlab qoʻyish uchun Google bilan kirish mumkin, lekin bu doim ixtiyoriy.',
+        a: 'Yoʻq. Oʻyinlarimiz hisobsiz ishlaydi. Soʻzbogʻ va Wordio’da progressni saqlab qoʻyish uchun Google bilan kirish mumkin, lekin bu doim ixtiyoriy. Bilim Manba’da har qanday maqolani hisobsiz oʻqiysiz; hisob faqat izoh va saqlangan maqolalar uchun.',
       },
       {
         q: 'Qaysi qurilmalarda ishlaydi?',
         a: 'Soʻzbogʻ — Google Play orqali tarqatiladigan Android oʻyini; hozircha iOS versiyasi yoʻq. TASHKENT CITY kompyuter yoki telefondagi istalgan zamonaviy brauzerda ishlaydi.',
       },
       {
-        q: 'Nega Soʻzbogʻni Google Play’dan topolmayapman?',
-        a: 'Oʻyin hozir yopiq testda — yaʼni Play Store’dagi sahifa faqat taklif qilingan sinovchilarga koʻrinadi. Sinov guruhiga qoʻshilmoqchi boʻlsangiz, bizga yozing.',
+        q: 'Soʻzbogʻni qayerdan yuklab olaman?',
+        a: 'Google Play’dan — “Soʻzbogʻ” yoki “Sozbog” deb qidiring yoki shu saytdagi Google Play tugmasini bosing. Oʻyin bepul va Android telefonlarda ishlaydi.',
       },
       {
         q: 'TASHKENT CITY qurilmamda sekin ishlayapti. Nima qilay?',
@@ -866,11 +907,11 @@ export const uz: SiteContent = {
       },
       {
         q: 'Progressim qayerda saqlanadi va qurilmani almashtirsam nima boʻladi?',
-        a: 'Soʻzbogʻda progress faqat qurilmangizda saqlanadi — serverga hech narsa yuborilmaydi, aynan shuning uchun sizdan hisob soʻramaymiz. TASHKENT CITY oddiy brauzerda ham xuddi shunday ishlaydi. Yagona istisno: TASHKENT CITY ni Telegram ichida ochsangiz, u nusxani Telegram bulut xotirangizda ham saqlaydi — shunda qurilma almashsa ham progress qoladi. Boshqa hollarda ilovani oʻchirish, brauzer maʼlumotini tozalash yoki qurilma almashtirish progressni boshidan boshlashni anglatadi.',
+        a: 'Soʻzbogʻda progress telefoningizda saqlanadi. Sozlamalarda Google bilan kirsangiz (ixtiyoriy), nusxasi bulutda ham turadi va yangi telefonda davom etasiz. TASHKENT CITY progressni brauzerda saqlaydi; Telegram ichida ochilsa, nusxasini Telegram bulut xotirangizda ham saqlaydi. Bularsiz ilovani oʻchirish, brauzer maʼlumotini tozalash yoki qurilma almashtirish progressni boshidan boshlashni anglatadi.',
       },
       {
         q: 'Maʼlumotimni qanday oʻchiraman?',
-        a: 'Soʻzbogʻda: Sozlamalar → Boshqarish → Progressni tozalash. Ilovani oʻchirish ham shunday natija beradi. TASHKENT CITY uchun brauzerdagi oʻsha sahifa maʼlumotini tozalang.',
+        a: 'Soʻzbogʻda: Sozlamalar → Boshqarish → Progressni tozalash; ilovani oʻchirish ham shunday natija beradi. Google bilan kirgan boʻlsangiz, Sozlamalar → Hisob boʻlimida hisobni ham oʻchiring — sayt pastidagi “Hisobni oʻchirish” sahifasida batafsil yozilgan. TASHKENT CITY uchun brauzerdagi oʻsha sahifa maʼlumotini tozalang.',
       },
       {
         q: 'Tanga sotib oldim, lekin kelmadi.',
@@ -881,7 +922,7 @@ export const uz: SiteContent = {
         a: 'Pul qaytarishni biz emas, Google Play boshqaradi, shuning uchun soʻrov Google Play hisobingiz orqali yuborilishi kerak. Agar Google rad etsa va sizningcha rostdan xatolik boʻlgan boʻlsa, baribir bizga yozing.',
       },
       {
-        q: 'Tushib qolgan soʻz yoki notoʻgʻri maʼno topdim.',
+        q: 'Tushib qolgan yoki notoʻgʻri mavzuga tushgan soʻz topdim.',
         a: 'Iltimos, ayting — bu rostdan foydali. Lugʻat qoʻlda yigʻilgan, demak xatolar bizniki va ularni tuzatmoqchimiz. Soʻzni va u chiqqan bosqichni yuboring.',
       },
       {

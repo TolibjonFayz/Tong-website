@@ -4,6 +4,12 @@ import { SITE } from '~/utils/site'
 const content = useSiteContent()
 const localePath = useLocalePath()
 const year = new Date().getFullYear()
+
+const socials = [
+  { href: SITE.social.tiktok, icon: 'tiktok', label: 'TikTok — @tong.games' },
+  { href: SITE.social.instagram, icon: 'instagram', label: 'Instagram — @tong.games' },
+  { href: SITE.social.googlePlay, icon: 'play', label: 'Google Play — Tong Inc.' },
+]
 </script>
 
 <template>
@@ -35,6 +41,23 @@ const year = new Date().getFullYear()
             <AppIcon name="pin" :size="15" />
             {{ content.contact.locationBody }}
           </p>
+          <!-- Studiyaning rasmiy sahifalari -->
+          <div class="mt-5 flex gap-2">
+            <a
+              v-for="s in socials"
+              :key="s.label"
+              :href="s.href"
+              target="_blank"
+              rel="noopener me"
+              :aria-label="s.label"
+              :title="s.label"
+              class="inline-flex h-9 w-9 items-center justify-center rounded-lg
+                     border border-border text-fg-muted transition-colors
+                     hover:border-accent hover:text-accent"
+            >
+              <AppIcon :name="s.icon" :size="17" />
+            </a>
+          </div>
         </div>
 
         <!-- Studiya -->
@@ -54,15 +77,29 @@ const year = new Date().getFullYear()
             </li>
             <li>
               <NuxtLink
+                :to="localePath('/work/sozbog')"
+                class="text-fg-muted transition-colors hover:text-accent"
+              >{{ content.products.sozbog?.name }}</NuxtLink>
+            </li>
+            <li>
+              <a
+                href="https://bilimmanba.uz"
+                target="_blank"
+                rel="noopener"
+                class="text-fg-muted transition-colors hover:text-accent"
+              >{{ content.products['bilim-manba']?.name }}</a>
+            </li>
+            <li>
+              <NuxtLink
                 :to="localePath('/work/tashkent-city')"
                 class="text-fg-muted transition-colors hover:text-accent"
               >{{ content.products['tashkent-city']?.name }}</NuxtLink>
             </li>
             <li>
               <NuxtLink
-                :to="localePath('/work/sozbog')"
+                :to="localePath('/news')"
                 class="text-fg-muted transition-colors hover:text-accent"
-              >{{ content.products.sozbog?.name }}</NuxtLink>
+              >{{ content.nav.news }}</NuxtLink>
             </li>
             <li>
               <NuxtLink

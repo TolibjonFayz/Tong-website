@@ -56,10 +56,10 @@ withDefaults(
 
     <p
       v-if="note"
-      class="flex items-center gap-1.5 text-xs font-medium text-accent-soft"
+      class="flex items-center gap-1.5 text-xs font-medium text-ok"
     >
       <span
-        class="inline-block h-1.5 w-1.5 shrink-0 rounded-full bg-accent-soft"
+        class="inline-block h-1.5 w-1.5 shrink-0 rounded-full bg-ok"
       />
       {{ content.cta.playStoreNote }}
     </p>
